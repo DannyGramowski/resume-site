@@ -11,35 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.menu-bar {
-  width: 100%;
-  height: 150px;
-}
-
-.menu-bar-item-row {
-}
-
-.menu-bar-item {
-  float: right;
-  margin: 20px;
-  font-size: 28px;
-  cursor: pointer
-}
-
-.menu-bar-item:hover {
-  font-size: 34px;
-}
-
-.main-page {
-  background-image: url(background\ image.jpg);
-  background-size: 100% 150%;
-  background-repeat: no-repeat;
-  height: 1200px;
-}
-
-.projects-redirect {
-  
-}
-
-
