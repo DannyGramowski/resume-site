@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Container, Row, Col} from 'reactstrap';
 
-export class ProjectsPage extends Component {
+export class Projects extends Component {
 
 //     -trained terrain
 // -nutribunch

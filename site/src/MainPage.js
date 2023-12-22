@@ -7,7 +7,7 @@ export class MainPage extends Component {
     render() {
         return (
             <Container className='main-page'>
-                <MenuBar />
+                Test test
             </Container>
         )
     }
