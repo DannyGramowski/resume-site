@@ -37,7 +37,9 @@ code {
   float: right;
   margin: 20px;
   font-size: 28px;
-  cursor: pointer
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
 }
 
 .menu-bar-item:hover {
