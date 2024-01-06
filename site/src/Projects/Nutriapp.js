@@ -1,26 +1,29 @@
 import { Component } from "react";
 import { Container, Col, Row } from "reactstrap";
-import "./Projects.css";
-import logo from "./images/ghost-jazz-logo.png";
 import { ArrowButton } from "../Gallery/ArrowButton";
+import logo from  "./images/Nutriapp.png";
+import "./Projects.css";
 
-//https://itch.io/jam/rit-game-developers-club-halloween-2023-game-jam/rate/2340203
-export class GhostJazz extends Component {
-    
-    click = () => {
-        console.log("click");
+export class Nutriapp extends Component {
+
+    onclick = () => {
+        console.log('nutriapp left');
+        this.props.arrowClick(-1);
     }
-
     render() {
-        let imageWidth = 350;
-        let imageRatio = 0.79365;
+        let imageWidth = 250;
+        let imageRatio = 0.8333;
+        console.log(this.props);
         return(
-            <Container className="ghost-jazz project">
+            <Container className="nutri-app project">
                 <Row className="inherit-size" style={{display: "flex"}}>
-                    <ArrowButton onClick={() => this.props.arrowClick(-1)} direction="left" />
+                    <ArrowButton onClick={this.onclick} direction="left" />
                     <Col className="project-content ">
                         <Col className="center">
-                            <img className="ghost-jazz-logo pointer-cursor " src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                            <Container className="nutri-app-logo-container">
+                                <img className=" pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                                <div className="nutri-app-logo-text">Nutriapp</div>
+                            </Container>
                         </Col>
                         <Col className="center">
                             <p style={{width: "500px"}}>
@@ -33,6 +36,9 @@ export class GhostJazz extends Component {
                     </Col>
 
                     <ArrowButton onClick={() => this.props.arrowClick(1)} direction="right" />
+                    {/* <Col xs={1}>
+                        <button onclick="this.click()" class="gallery-button right button">b</button>
+                    </Col> */}
                 </Row>
             </Container>
         )

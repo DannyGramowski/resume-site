@@ -13,6 +13,21 @@
     display: block;
 }
 
+.nutri-app {
+    background-color: #386641;
+}
+
+.nutri-app-logo-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.nutri-app-logo-text {
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
 .ghost-jazz {
     background-color: #0dd091;
 }
