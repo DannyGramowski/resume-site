@@ -5,9 +5,12 @@ import { NavBar } from './NavBar';
 import { MainPage } from './MainPage';
 import { Projects } from './Projects';
 import { Resume } from './Resume';
+import { Button } from 'reactstrap';
 
 function App() {
   return (
+    // <Button onClick={()=>console.log('hi')}>Hi</Button>
+
     <BrowserRouter>
       <NavBar />
       <Routes>

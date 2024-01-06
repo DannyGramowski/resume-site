@@ -1,0 +1,28 @@
+.project {
+    width: 750px;
+    height: 550px;
+    border-radius: 50px;
+}
+
+.pointer-cursor:hover {
+    cursor: pointer;
+}
+
+.project-content {
+    width: 600px;
+    display: block;
+}
+
+.ghost-jazz {
+    background-color: #0dd091;
+}
+
+.ghost-jazz-logo {
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+.inherit-size {
+    width: inherit;
+    height: inherit;
+}

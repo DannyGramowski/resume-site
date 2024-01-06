@@ -7,7 +7,7 @@ export class BunchNotes extends Component {
     render() {
         return(
             <Container>
-
+                BunchNotes
             </Container>
         )
     }

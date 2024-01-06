@@ -1,17 +1,22 @@
 import { Component } from "react";
-import { Container } from "reactstrap";
+import { Button, Container } from "reactstrap";
 import "./Gallery.css"
+import { GhostJazz } from "../Projects/GhostJazz";
 
 export class Gallery extends Component {
-    
-    constructor(props){
-        super(props)
+
+    renderProjects = () => {
+
+        return this.props.projects.map(ele => {
+            return ele;
+        })
     }
 
     render() {
         return(
-            <Container>
-
+            <Container className="center gallery">
+                {/* {this.renderProjects()} */}
+                <GhostJazz />
             </Container>
         )
     }
