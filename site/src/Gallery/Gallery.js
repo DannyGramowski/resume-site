@@ -3,13 +3,16 @@ import { Button, Container } from "reactstrap";
 import "./Gallery.css"
 import { GhostJazz } from "../Projects/GhostJazz";
 import { Nutriapp } from "../Projects/Nutriapp";
+import { BunchNotes } from "../Projects/BunchNotes"
+import { ArrowButton } from "./ArrowButton";
+import { AquaVybes } from "../Projects/AquaVybes";
 
 export class Gallery extends Component {
     
 
     constructor(props) {
         super(props);
-        this.state = {galleryIndex: 0, projects: [<Nutriapp arrowClick={this.arrowClick}/>, <GhostJazz arrowClick={this.arrowClick}/>]};
+        this.state = {galleryIndex: 0, projects: [<AquaVybes />, <BunchNotes />, <Nutriapp />, <GhostJazz />]};
 
     }
     renderProjects = () => {
@@ -32,7 +35,9 @@ export class Gallery extends Component {
         return(
             <Container className="center gallery">
                 {/* {this.renderProjects()} */}
+                <ArrowButton onClick={() => this.arrowClick(-1)} direction="left" />
                 {this.state.projects[this.state.galleryIndex]}
+                <ArrowButton onClick={() => this.arrowClick(1)} direction="right" />
             </Container>
         )
     }

@@ -3,6 +3,7 @@ import { Container, Col, Row } from "reactstrap";
 import "./Projects.css";
 import logo from "./images/ghost-jazz-logo.png";
 import { ArrowButton } from "../Gallery/ArrowButton";
+import { Link } from "react-router-dom";
 
 //https://itch.io/jam/rit-game-developers-club-halloween-2023-game-jam/rate/2340203
 export class GhostJazz extends Component {
@@ -15,12 +16,12 @@ export class GhostJazz extends Component {
         let imageWidth = 350;
         let imageRatio = 0.79365;
         return(
-            <Container className="ghost-jazz project">
-                <Row className="inherit-size" style={{display: "flex"}}>
-                    <ArrowButton onClick={() => this.props.arrowClick(-1)} direction="left" />
+            <Container className="ghost-jazz project center">
                     <Col className="project-content ">
                         <Col className="center">
-                            <img className="ghost-jazz-logo pointer-cursor " src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                            <Link to="/ghost-jazz">
+                                <img className="ghost-jazz-logo pointer-cursor " src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                            </Link>
                         </Col>
                         <Col className="center">
                             <p style={{width: "500px"}}>
@@ -31,10 +32,17 @@ export class GhostJazz extends Component {
                             </p>
                         </Col>
                     </Col>
-
-                    <ArrowButton onClick={() => this.props.arrowClick(1)} direction="right" />
-                </Row>
             </Container>
         )
+    }
+}
+
+export class GhostJazzPage extends Component {
+    render() {
+        return (
+            <Container>
+                page
+            </Container>
+        );
     }
 }

@@ -1,21 +1,21 @@
-import { Component } from "react";
-import { Container, Col, Row } from "reactstrap";
+import { Component, Link } from "react";
+import { Container, Row, Col } from "reactstrap";
+import "./Projects.css"
 import { ArrowButton } from "../Gallery/ArrowButton";
-import logo from  "./images/Nutriapp.png";
-import "./Projects.css";
+import logo from "./images/AquaVybes.png";
 
-export class Nutriapp extends Component {
-    render() {
-        let imageWidth = 250;
-        let imageRatio = 0.8333;
-        console.log(this.props);
-        return(
-            <Container className="nutri-app project center">
+export class AquaVybes extends Component {
+    render() { 
+        let imageWidth = 180;
+        let imageRatio = 1;
+
+        return (
+            <Container className="aqua-vybes project center">
                     <Col className="project-content ">
                         <Col className="center">
                             <Container className="nutri-app-logo-container">
-                                <img className=" pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                <div className="nutri-app-logo-text">Nutriapp</div>
+                                <img className="pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                                <div className="aqua-vybes-logo-text">AquaVybes</div>
                             </Container>
                         </Col>
                         <Col className="center">
@@ -28,6 +28,6 @@ export class Nutriapp extends Component {
                         </Col>
                     </Col>
             </Container>
-        )
+        );
     }
 }

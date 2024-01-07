@@ -9,7 +9,7 @@ export class ArrowButton extends Component {
     }
 
     render() {
-        let classes = "gallery-button pointer-cursor centered " + (this.props.direction === "left" ? "flip" : "");
+        let classes = "gallery-button pointer-cursor centered " + (this.props.direction === "left" ? "flip" : "normal");
         return (
             <Col xs={1} className="gallery-button-container">
                 <Button onClick={this.props.onClick} className={classes}>

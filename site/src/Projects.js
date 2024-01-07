@@ -11,7 +11,7 @@ export class Projects extends Component {
         //image gallery here and each project has their own page. make it a square
         return(
             <Container>
-               <Gallery projects={[<GhostJazz />, <BunchNotes />]} />
+               <Gallery />
             </Container>
         );
     }

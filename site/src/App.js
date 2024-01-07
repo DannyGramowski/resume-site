@@ -6,6 +6,7 @@ import { MainPage } from './MainPage';
 import { Projects } from './Projects';
 import { Resume } from './Resume';
 import { Button } from 'reactstrap';
+import { GhostJazzPage } from './Projects/GhostJazz';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/ghost-jazz" element={<GhostJazzPage /> }/>
       </Routes>
     </BrowserRouter>
   );
