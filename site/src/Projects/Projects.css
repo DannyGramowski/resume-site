@@ -17,13 +17,9 @@
     background-color: #386641;
 }
 
-.bunch-notes {
-    background-color: #f7efb2;
-}
-
 .nutri-app-logo-container {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .nutri-app-logo-text {
@@ -32,18 +28,62 @@
     color: white;
 }
 
+.nutri-app-text {
+    color: rgb(230, 226, 226);
+    font-size: 18px;
+}
+
+.bunch-notes {
+    background-color: #f7efb2;
+}
+
+.bunch-notes-logo-container {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
 .bunch-notes-logo-text {
     font-size: 50px;
     color: black;
+}
+
+.bunch-notes-text {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 
 .aqua-vybes {
     background-color: #ccfffc;
 }
 
+.aqua-vybes-logo-container {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
 .aqua-vybes-logo-text {
     font-size: 50px;
     color: rgba(1,149,222);
+    margin-top: -40px;
+}
+
+.aqua-vybes-text {
+    color: rgb(25, 25, 25);
+    font-size: 18px;
+}
+
+.kalaras {
+    background-color: rgb(236, 66, 66);
+}
+
+.kalaras-logo-text {
+    font-size: 50px;
+    color: #fff5e0;
+}
+
+.kalaras-text {
+    color: #fff5e0;
+    font-size: 18px;
 }
 
 .ghost-jazz {
@@ -55,7 +95,16 @@
     margin-bottom: 25px;
 }
 
+.ghost-jazz-text {
+    color: rgb(60, 59, 59);
+    font-size: 18px;
+}
+
 .inherit-size {
     width: inherit;
     height: inherit;
+}
+
+a {
+    text-decoration: none;
 }

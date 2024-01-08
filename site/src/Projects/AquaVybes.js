@@ -1,33 +1,55 @@
-import { Component, Link } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Component } from "react";
+import { Container, Col } from "reactstrap";
+import { Link } from "react-router-dom";
 import "./Projects.css"
-import { ArrowButton } from "../Gallery/ArrowButton";
 import logo from "./images/AquaVybes.png";
 
 export class AquaVybes extends Component {
     render() { 
-        let imageWidth = 180;
-        let imageRatio = 1;
+        let imageWidth = 260;
+        let imageRatio = 0.7119;
 
         return (
             <Container className="aqua-vybes project center">
                     <Col className="project-content ">
                         <Col className="center">
-                            <Container className="nutri-app-logo-container">
-                                <img className="pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                <div className="aqua-vybes-logo-text">AquaVybes</div>
+                            <Container className="aqua-vybes-logo-container">
+                                <Link to="/aqua-vybes">
+                                    <img className="pointer-cursor" src={logo} alt="Aqua Vybes logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                                    <div className="aqua-vybes-logo-text">AquaVybes</div>
+                                </Link>
                             </Container>
                         </Col>
                         <Col className="center">
-                            <p style={{width: "500px"}}>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                                cillum dolore eu fugiat nulla pariatur. 
-                            </p>
+                            <Container className="aqua-vybes-text">
+                                <p style={{width: "500px", marginBottom: "-10px"}} >
+                                    This was an online estore that sold custom flavored water for my introduction to 
+                                    software engineering class. We used scrum to organize the project and 
+                                    meet goals. The estore was built using Spring backend and Angular frontend.
+                                    I was responible for setting up user and admin log in, user feedback, and setting up product data.
+                                </p>
+                                <br />
+                                <Container className="center">
+                                    <p>
+                                        Project Date: &nbsp; Jan. 2023 - May. 2023
+                                    </p>
+                                </Container>
+                            </Container>
                         </Col>
                     </Col>
             </Container>
         );
     }
 }
+
+export class AquaVybesPage extends Component {
+    state = {  } 
+    render() { 
+        return (
+            <Container>
+                AquaVybes
+            </Container>
+        );
+    }
+}
+ 

@@ -1,18 +1,20 @@
 import { Component } from "react";
-import { Button, Container } from "reactstrap";
+import { Container } from "reactstrap";
 import "./Gallery.css"
 import { GhostJazz } from "../Projects/GhostJazz";
-import { Nutriapp } from "../Projects/Nutriapp";
+import { NutriApp } from "../Projects/NutriApp";
 import { BunchNotes } from "../Projects/BunchNotes"
 import { ArrowButton } from "./ArrowButton";
 import { AquaVybes } from "../Projects/AquaVybes";
+import { KalarasLastDefense } from "../Projects/KalarasLastDefense";
 
 export class Gallery extends Component {
     
 
     constructor(props) {
         super(props);
-        this.state = {galleryIndex: 0, projects: [<AquaVybes />, <BunchNotes />, <Nutriapp />, <GhostJazz />]};
+        this.state = {galleryIndex: 0, 
+            projects: [<NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
 
     }
     renderProjects = () => {
