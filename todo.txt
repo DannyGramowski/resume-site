@@ -1,0 +1,14 @@
+Pages
+-bunchnotes page
+-kalaras page
+-ghost jazz page
+-aqua vybes page
+-nutriapp page
+
+About
+-blurb
+-skills section
+
+NavBar
+-add linkdn, github, gmail
+-add effect to show which one is active

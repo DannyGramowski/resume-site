@@ -1,0 +1,37 @@
+.main-page {
+    background-image: url(files/background\ image.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1200px;
+  }
+  
+.blurb-text {
+    font-size: 20px;
+}
+  
+.blurb-container {
+    width: 500px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.download-button {
+    background-color: var(--blue);
+    width: 150px;
+    height: 40px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.download-text {
+    font-size: 35px;
+    color: black;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
