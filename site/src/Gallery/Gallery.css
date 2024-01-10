@@ -1,5 +1,6 @@
 .gallery {
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 15px;
     size: 75px;
 }
 
@@ -51,4 +52,58 @@
 
 .arrow:active {
     height: 50px;
+}
+
+.proj-button {
+    background-color: rgb(129, 126, 126);
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100px;
+    border-color: rgb(79, 77, 77);
+
+    position: relative;
+    display: inline-block;
+
+}
+
+.active {
+    background-color: rgb(198, 196, 196);
+    width: 25px;
+    height: 25px;
+}
+
+.proj-button:hover {
+    width: 30px;
+    height: 30px;
+    box-shadow: 5px 5px 5px #b0aeae;
+}
+
+.proj-button-container {
+    margin-top: -15px;
+    width: 75px;
+    height: 75px;
+}
+
+.proj-button .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.proj-button:hover .tooltip {
+    visibility: visible;
 }

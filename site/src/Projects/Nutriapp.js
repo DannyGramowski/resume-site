@@ -8,7 +8,7 @@ export class NutriApp extends Component {
     render() {
         let imageWidth = 250;
         let imageRatio = 0.8333;
-        console.log(this.props);
+
         return(
 
             <Container className="nutri-app project center">

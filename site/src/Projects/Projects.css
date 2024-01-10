@@ -29,7 +29,7 @@
 }
 
 .nutri-app-text {
-    color: rgb(230, 226, 226);
+    color: #e6e2e2;
     font-size: 18px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .bunch-notes-text {
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-size: 18px;
 }
 
@@ -63,17 +63,17 @@
 
 .aqua-vybes-logo-text {
     font-size: 50px;
-    color: rgba(1,149,222);
+    color: #0195de;
     margin-top: -40px;
 }
 
 .aqua-vybes-text {
-    color: rgb(25, 25, 25);
+    color: 	#191919;
     font-size: 18px;
 }
 
 .kalaras {
-    background-color: rgb(236, 66, 66);
+    background-color: #ec4242;
 }
 
 .kalaras-logo-text {
@@ -96,7 +96,7 @@
 }
 
 .ghost-jazz-text {
-    color: rgb(60, 59, 59);
+    color: 	#3c3b3b;
     font-size: 18px;
 }
 
