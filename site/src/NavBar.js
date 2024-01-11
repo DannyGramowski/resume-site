@@ -6,6 +6,12 @@ import linkedin from "./files/linkedin.png";
 import itch from "./files/itch.png";
 
 export class NavBar extends Component {
+    state = {activeItem: 0}
+
+    getClassNames =  (num) => {
+        return num === this.state.activeItem ? 'menu-bar-item active-bar-item' : 'menu-bar-item'; 
+    }
+
     render() {
         let width = 30;
         let githubRatio = 0.941;
@@ -16,10 +22,10 @@ export class NavBar extends Component {
             <Container className='menu-bar'>
                     <Row className='menu-bar-item-row '>
                             <Col className='menu-bar-item-container'>
-                                <Link to='/' className='menu-bar-item'>About</Link>
+                                <Link to='/' className={this.getClassNames(0)} onClick={() => this.setState({activeItem: 0})}>About</Link>
                             </Col>
                             <Col className='menu-bar-item-container'>
-                                <Link to='/projects' className='menu-bar-item'>Projects</Link>
+                                <Link to='/projects' className={this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Projects</Link>
                             </Col>
                             <Col className='menu-bar-item-container'>
                                 <a href="https://dannytga.itch.io/" className='icon' target='_blank'>
