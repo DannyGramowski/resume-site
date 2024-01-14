@@ -8,6 +8,17 @@
 .blurb-text {
     font-size: 20px;
 }
+
+.name-text {
+    font-size: 35px;
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
   
 .blurb-container {
     width: 500px;
@@ -33,5 +44,7 @@
 .download-button:hover {
     cursor: pointer;
     opacity: 0.85;
+    box-shadow: 3px 3px 5px #b0aeae;
+
 }
 

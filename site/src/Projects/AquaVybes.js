@@ -10,19 +10,19 @@ export class AquaVybes extends Component {
         let imageRatio = 0.7119;
 
         return (
-            <Container className="aqua-vybes project center">
+            <Container className="aquavybes project center">
                     <Col className="project-content ">
                         <Col className="center">
                             <Container className="aqua-vybes-logo-container">
                                 <Link to="/aqua-vybes">
                                     <img className="pointer-cursor" src={logo} alt="Aqua Vybes logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                    <div className="aqua-vybes-logo-text">AquaVybes</div>
+                                    <div className="logo-text" style={{margin: "-40px"}}>AquaVybes</div>
                                 </Link>
                             </Container>
                         </Col>
                         <Col className="center">
-                            <Container className="aqua-vybes-text">
-                                <p style={{width: "500px", marginBottom: "-10px"}} >
+                            <Container className="blurb-font">
+                                <p style={{width: "500px", marginBottom: "-10px", color: "black"}} >
                                     This was an online estore that sold custom flavored water for my introduction to 
                                     software engineering class. We used scrum to organize the project and 
                                     meet goals. The estore was built using Spring backend and Angular frontend.

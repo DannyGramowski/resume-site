@@ -15,11 +15,11 @@ export class Gallery extends Component {
     constructor(props) {
         super(props);
         this.state = {galleryIndex: 0, 
-            projectData: [{name: "NutriApp", background: "#386641", textColor: "#ffffff"},
-             {name: "Ghost Jazz", background: "#0dd091", textColor: "#3c3b3b"},
-              {name: "AquaVybes", background: "#ccfffc", textColor: "#0195de"},
-               {name: "BunchNotes", background: "#f7efb2", textColor: "#000000"},
-               {name: "Kalara's Last Defense", background: "#ec4242", textColor: "#fff5e0"}],
+            projectData: [{name: "NutriApp", cssName: "nutriapp"},
+             {name: "Ghost Jazz", cssName: "ghostjazz" },
+              {name: "AquaVybes", cssName: "aquavybes"},
+               {name: "BunchNotes", cssName: "bunchnotes"},
+               {name: "Kalara's Last Defense", cssName: "kalaras"}],
             projects: [<NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
     
         if(this.state.projectData.length != this.state.projects.length) {

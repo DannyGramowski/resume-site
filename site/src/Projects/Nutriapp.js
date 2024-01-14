@@ -11,18 +11,18 @@ export class NutriApp extends Component {
 
         return(
 
-            <Container className="nutri-app project center">
+            <Container className="nutriapp project center">
                     <Col className="project-content ">
                         <Col className="center">
                             <Container className="nutri-app-logo-container">
                                 <Link to="/nutri-app" >
                                     <img className=" pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                    <div className="nutri-app-logo-text">Nutriapp</div>
+                                    <div className="logo-text" style={{marginTop: "-15px"}}>Nutriapp</div>
                                 </Link>
                             </Container>
                         </Col>
                         <Col className="center">
-                            <Container className="nutri-app-text">
+                            <Container className="blurb-font">
 
                                 <p style={{width: "500px", marginBottom: "-10px"}} >
                                     This is a web app that allows a user to track weight, calories, and workouts as 

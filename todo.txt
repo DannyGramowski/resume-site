@@ -7,4 +7,6 @@ Pages
 
 About
 -blurb
+-education
 -skills section
+-hobbies

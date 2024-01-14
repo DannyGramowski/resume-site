@@ -10,19 +10,19 @@ export class BunchNotes extends Component {
         let imageWidth = 180;
         let imageRatio = 1;
         return(
-            <Container className="bunch-notes project center">
+            <Container className="bunchnotes project center">
                     <Col className="project-content ">
                         <Col className="center">
                             <Container className="bunch-notes-logo-container">
                                 <Link to="/bunch-notes">
                                     <img className="pointer-cursor" src={logo} alt="Bunch Notes logo" width={imageWidth} height={imageRatio * imageWidth}/>
                                     <div>
-                                        <span className="bunch-notes-logo-text">Bunch</span><span className="bunch-notes-logo-text" style={{color: "rgb(14 165 233)"}}>Notes</span>
+                                        <span className="logo-text">Bunch</span><span className="bunch-notes-logo-text" style={{color: "rgb(14 165 233)"}}>Notes</span>
                                     </div>
                                 </Link>
                             </Container>
                         </Col>
-                        <Col className="center bunch-notes-text">
+                        <Col className="center blurb-font">
                             <Container>
                                 <p style={{width: "500px", marginBottom: "-15px"}}>
                                     This was part of Brickhack 9 at RIT. BunchNotes is a note sharing platfrom that

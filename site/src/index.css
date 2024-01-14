@@ -4,6 +4,18 @@
   --grey: #757780;
   --black: #001011;
   --blue: #6CCFF6 ;
+
+  --nutriappbg: #386641;
+  --ghostjazzbg: #0dd091;
+  --aquavybesbg: #ccfffc;
+  --bunchnotesbg: #f7efb2;
+  --kalarasbg: #ec4242;
+
+  --nutriappft: #ffffff;
+  --ghostjazzft: #3c3b3b;
+  --aquavybesft: #0195de;
+  --bunchnotesft: #000000;
+  --kalarasft: #fff5e0;
 }
 
 body {
@@ -20,6 +32,31 @@ code {
     monospace;
 }
 
+.nutriapp {
+  background-color: var(--nutriappbg);
+  color: var(--nutriappft);
+}
+
+.ghostjazz {
+  background-color: var(--ghostjazzbg);
+  color: var(--ghostjazzft);
+}
+
+.aquavybes {
+  background-color: var(--aquavybesbg);
+  color: var(--aquavybesft);
+}
+
+.bunchnotes {
+  background-color: var(--bunchnotesbg);
+  color: var(--bunchnotesft);
+}
+
+.kalaras {
+  background-color: var(--kalarasbg);
+  color: var(--kalarasft);
+}
+
 .menu-bar {
   width: 100%;
   height: 100px;
@@ -34,7 +71,7 @@ code {
   position: absolute;
   right: -70px;
   top: 10px;
-  width: 500px;  
+  width: 620px;  
 }
 
 .menu-bar-item {

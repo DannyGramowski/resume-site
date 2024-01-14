@@ -17,11 +17,11 @@ export class KalarasLastDefense extends Component {
                             <Container className="nutri-app-logo-container">
                                 <Link to="/kalaras">
                                     <img className="pointer-cursor" src={logo} alt="Kalaras Last Defense logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                    <div className="kalaras-logo-text">Kalara's Last Defense</div>
+                                    <div className="logo-text">Kalara's Last Defense</div>
                                 </Link>
                             </Container>
                         </Col>
-                        <Col className="center kalaras-text">
+                        <Col className="center blurb-font">
                             <Container>
                                 <p style={{width: "500px", marginBottom: "-15px"}}>
                                     This is a fully release tower defense game built in Unity. I did everything 

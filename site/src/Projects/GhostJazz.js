@@ -15,14 +15,14 @@ export class GhostJazz extends Component {
         let imageWidth = 350;
         let imageRatio = 0.79365;
         return(
-            <Container className="ghost-jazz project center">
+            <Container className="ghostjazz project center">
                     <Col className="project-content ">
                         <Col className="center">
-                            <Link to="/ghost-jazz">
+                            <Link to="/ghostjazz">
                                 <img className="ghost-jazz-logo pointer-cursor " src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
                             </Link>
                         </Col>
-                        <Col className="center ghost-jazz-text">
+                        <Col className="center blurb-font">
                             <Container>
                                 <p style={{width: "500px", marginBottom: "-15px"}}>
                                     This was part of the 2023 Game Developers Club Halloween Game Jam. Ghost Jazz is a rhythm 

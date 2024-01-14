@@ -13,8 +13,7 @@ export class ProjectButton extends Component {
     render() { 
         let className = "proj-button" + (this.props.active === true ? " active" : "");
         let data = this.props.projectData;
-        let background = data.background;
-        let textColor = data.textColor;
+        let tooltipClassName = "tooltip " + data.cssName
 
         let style = this.state.hover ? {boxShadow: ``} : {};
  //shadows on hover or always
@@ -24,7 +23,7 @@ export class ProjectButton extends Component {
         return (
             <Container className="proj-button-container center">
                 <Button className={className} style={style} onClick={this.props.onClick} onMouseEnter={() => this.toggleHover(true)} onMouseLeave={() => this.toggleHover(false)}>
-                    <span className="tooltip" style={{background: background, color: textColor}}>{data.name}</span>
+                    <span className={tooltipClassName} >{data.name}</span>
                 </Button>
             </Container>
         );
