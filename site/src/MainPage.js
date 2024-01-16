@@ -4,9 +4,9 @@ import "./MainPage.css"
 
 export class MainPage extends Component {
 
-    createSkill = (skill, hoverText) => {
-        return <ListGroupItem className="skill-item skill">
-            Windows<span></span>
+    createSkill = (skill, hoverText, onLeft) => {
+        return <ListGroupItem className="skill-item skill">{skill}
+            {hoverText != "" ? <span className={"skill-tooltip " + (onLeft ? "left-tooltip" : "right-tooltip")}>{hoverText}</span> : <Container></Container>}
         </ListGroupItem>
 
     }
@@ -18,14 +18,16 @@ export class MainPage extends Component {
                         {/* blurb text and image */}
                         <Row className="center blurb-container">
                             <Col>
-                                <Row>
+                                <Row >
                                     <Container className="name-text">I am Danny Gramowski</Container>
                                 </Row>
-                                <Container className="image-placeholder">
-                                {/* image */}
-
+                                <Container className="center-horiz">
+                                    {/* image */}
+                                    <Container className="image-placeholder" />
                                 </Container>
-                                <Row>
+                                
+
+                                <Row className="center-horiz">
                                     <Container className="blurb-text">
                                         I am a second year software engineering student at RIT. I have
                                         experience in a large number of different fields within computer science. I enjoy learning and 
@@ -45,15 +47,15 @@ export class MainPage extends Component {
                         {/* skills */}
                         <Row>
                             {/* languages. Add on hover that shows what projects I used them on*/}
-                                <Row className="skills-container">
+                                <Row className="skills-container center-horiz">
                                     <ListGroup className="skills-col" >
                                         <ListGroupItem className="skill-item skill-header">Languages</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">C#</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Java</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Python</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">C/C++</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">SQL</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">JavaScript/Typescript</ListGroupItem>
+                                        {this.createSkill("C#", "Nutriapp, Ghost Jazz, Kalaras Last Defense", true)}
+                                        {this.createSkill("Java", "AquaVybes, Computer Science 1(class), Computer Science 1(class)", true)}
+                                        {this.createSkill("Python", "BunchNotes, Web Engineering(class)", true)}
+                                        {this.createSkill("C/C++", "Personal Software Engineering(class)", true)}
+                                        {this.createSkill("SQL", "BunchNotes, Web Engineering(class)", true)}
+                                        {this.createSkill("JavaScript/Typescript", "Nutriapp, BunchNotes, AquaVybes, Web Engineering(class)", true)}
                                     </ListGroup>
 
                                     <ListGroup className="skill-filler" >
@@ -61,16 +63,17 @@ export class MainPage extends Component {
                                     </ListGroup>
                                     
                                     <ListGroup className="skills-col" >
+
                                         <ListGroupItem className="skill-item skill-header">Miscellaneous</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Windows</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Linux</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Unity</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Angular</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">React</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">Spring</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">FastAPI</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">TensorFlow</ListGroupItem>
-                                        <ListGroupItem className="skill-item skill">PostgreSQL</ListGroupItem>
+                                        {this.createSkill("Windows", "Main platform", false)}
+                                        {this.createSkill("Linux", "Personal Software Engineering(class)", false)}
+                                        {this.createSkill("Unity", "Ghost Jazz, Kalaras Last Defense", false)}
+                                        {this.createSkill("Angular", "AquaVybes", false)}
+                                        {this.createSkill("React", "This website, Web Engineering(class)", false)}
+                                        {this.createSkill("Spring Boot", "AquaVybes", false)}
+                                        {this.createSkill("FastAPI", "BunchNotes", false)}
+                                        {this.createSkill("TensorFlow", "Trained Terrain", false)}
+                                        {this.createSkill("PostgreSQL", "BunchNotes, Web Engineering(class)", false)}
                                     </ListGroup>
                                 </Row>
 

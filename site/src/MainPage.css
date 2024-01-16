@@ -5,11 +5,12 @@
 }
 
 .page-container {
-    width: 500
+    
 }
   
 .blurb-text {
     font-size: 20px;
+    width: 80%;
 }
 
 .name-text {
@@ -21,34 +22,37 @@
     width: 500px;
     height: 500px;
     background-color: grey;
+    justify-self: center;
 }
   
 .blurb-container {
-    width: 500px;
+    width: inherit;
 }
 
 .skills-container {
     display: flex;
-    width: 500;
 }
 
 .skills-col {
-    width: 40%;
+    max-width: 200px;
     padding-left: 0;
 }
 
 .skill-filler {
-    width: 20%;
+    max-width: 250px;
 }
 
 .skill-header {
     text-align: center;
+    font-size: 22px;
+    padding: 4px;
 }
 
 .skill {
     padding-left: 4px;
     position: relative;
     display: inline-block;
+    font-size: px;
 }
 
 .skill-item {
@@ -60,25 +64,36 @@
     border-color: rgb(14, 125, 135);
     border-style: solid;
     border-width: 2px;
+    width: 100%;
 }
 
 .skill-tooltip {
     visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+  width: 140px;
+  background-color: var(--green);
+  color: #4e4f54;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px 2px;
   
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: -5px;
-  left: 105%;
+
 }
 
-.skill-tooltip:hover {
+
+.left-tooltip {
+    right: 105%;
+}
+
+.right-tooltip {
+    left: 105%;
+
+}
+
+.skill:hover .skill-tooltip{
     visibility: visible;
   }
 
