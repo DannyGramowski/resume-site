@@ -8,5 +8,5 @@ Pages
 About
 -blurb
 -education
--skills section
+-skills section -- add on hover that shows what projects I used them on.
 -hobbies
