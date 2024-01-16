@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Container, Col, Row, ListGroup, ListGroupItem } from "reactstrap";
-import "./MainPage.css"
+import "./MainPage.css";
+import dannyImage from "./files/Danny zipline.png";
 
 export class MainPage extends Component {
 
@@ -11,6 +12,8 @@ export class MainPage extends Component {
 
     }
     render() {
+        let dannyHeight = 500;
+        let dannyRatio = 0.666;
         return (
             <Container className="main-page">
                 <Container className="center">
@@ -22,8 +25,8 @@ export class MainPage extends Component {
                                     <Container className="name-text">I am Danny Gramowski</Container>
                                 </Row>
                                 <Container className="center-horiz">
-                                    {/* image */}
-                                    <Container className="image-placeholder" />
+                                    <img src={dannyImage} height={dannyHeight} width={dannyHeight * dannyRatio}/>
+                                    {/* <Container className="image-placeholder" /> */}
                                 </Container>
                                 
 

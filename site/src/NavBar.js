@@ -19,6 +19,7 @@ export class NavBar extends Component {
         let itchRation = 1;
 
         return (
+        <Container className='menu-bar-container'>
             <Container className='menu-bar'>
                     <Row className='menu-bar-item-row '>
                         <Col className='menu-bar-item-container'>
@@ -51,6 +52,8 @@ export class NavBar extends Component {
                         </Col>
                     </Row>  
             </Container>
+            <Container className='menu-bar-divider' />
+        </Container>
         )
     }
 }

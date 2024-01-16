@@ -17,7 +17,7 @@ export class BunchNotes extends Component {
                                 <Link to="/bunch-notes">
                                     <img className="pointer-cursor" src={logo} alt="Bunch Notes logo" width={imageWidth} height={imageRatio * imageWidth}/>
                                     <div>
-                                        <span className="logo-text">Bunch</span><span className="bunch-notes-logo-text" style={{color: "rgb(14 165 233)"}}>Notes</span>
+                                        <span className="logo-text">Bunch</span><span className="logo-text" style={{color: "rgb(14 165 233)"}}>Notes</span>
                                     </div>
                                 </Link>
                             </Container>
