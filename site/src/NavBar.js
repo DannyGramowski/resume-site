@@ -29,7 +29,7 @@ export class NavBar extends Component {
                             <Link to='/projects' className={this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Projects</Link>
                         </Col>
                         <Col className='menu-bar-item-container'>
-                            <a href="./files/Danny_Resume.pdf" download className="menu-bar-item">
+                            <a href="src/files/Danny_Resume.pdf" download className="menu-bar-item">
                                 <div>
                                     Resume
                                 </div>

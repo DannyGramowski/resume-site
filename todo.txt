@@ -5,3 +5,6 @@ Pages
 -aqua vybes page
 -nutriapp page
 
+fix resume download
+remove bubble for skill headers
+

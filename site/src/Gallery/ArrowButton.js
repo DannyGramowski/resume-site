@@ -1,6 +1,5 @@
 import { Component } from "react";
-import { Container, Col, Row, Button} from "reactstrap";
-
+import { Col, Button} from "reactstrap";
 import arrow from "./images/arrow.png";
 
 export class ArrowButton extends Component {
