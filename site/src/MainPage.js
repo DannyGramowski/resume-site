@@ -5,12 +5,14 @@ import dannyImage from "./files/Danny zipline.png";
 
 export class MainPage extends Component {
 
+    state = {projectText: ""}
+
     createDivider = () => {
         return <Container className="divider"/>
     }
 
     createSkill = (skill, hoverText, onLeft) => {
-        return <ListGroupItem className="skill-item skill">{skill}
+        return <ListGroupItem className="skill-item skill" onMouseEnter={() => this.setState({projectText: hoverText})} onMouseLeave={() => this.setState({projectText: ""})}>{skill}
             {hoverText != "" ? <span className={"skill-tooltip " + (onLeft ? "left-tooltip" : "right-tooltip")}>{hoverText}</span> : <Container></Container>}
         </ListGroupItem>
 
@@ -69,9 +71,21 @@ export class MainPage extends Component {
                                     </ListGroup>
 
                                     <ListGroup className="skill-filler" >
-                                        <Container className="center skill-filler-background-container">
-                                            <Container className="skill-filler-background"></Container>
-                                        </Container>
+                                            <Container className="skill-filler-background" />
+                                        {/* create empty space */}
+                                    </ListGroup>
+                                    <ListGroup className="skills-col">
+                                        <ListGroupItem className="skill-item skill-header">Projects Used In</ListGroupItem>
+                                        {this.state.projectText === "" ? <Container /> :
+                                        <Container className="project-text-container">
+                                            <Container className="project-text">
+                                                {this.state.projectText}
+                                            </Container>
+                                        </Container>}
+                                    </ListGroup>
+
+                                    <ListGroup className="skill-filler" >
+                                            <Container className="skill-filler-background" />
                                         {/* create empty space */}
                                     </ListGroup>
                                     
