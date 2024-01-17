@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d72b5b07.css",
+    "main.js": "/static/js/main.78b67b87.js",
+    "static/js/787.48bc3d2f.chunk.js": "/static/js/787.48bc3d2f.chunk.js",
+    "static/media/Danny zipline.png": "/static/media/Danny zipline.ed6742a3d19459ea96f1.png",
+    "static/media/background image.jpg": "/static/media/background image.d8f07162ac042b8687b7.jpg",
+    "static/media/Kalaras.png": "/static/media/Kalaras.9378ce571cafa55b8aaf.png",
+    "static/media/AquaVybes.png": "/static/media/AquaVybes.498698925a3a0735cf7c.png",
+    "static/media/itch.png": "/static/media/itch.b7e32da355f80f48aa40.png",
+    "static/media/ghost-jazz-logo.png": "/static/media/ghost-jazz-logo.9781c710075914b9bf6c.png",
+    "static/media/github.png": "/static/media/github.cb218f44e20683a54494.png",
+    "static/media/Nutriapp.png": "/static/media/Nutriapp.b8a6524e45666e3381aa.png",
+    "static/media/linkedin.png": "/static/media/linkedin.ce57aaffbfbffc186745.png",
+    "index.html": "/index.html",
+    "main.d72b5b07.css.map": "/static/css/main.d72b5b07.css.map",
+    "main.78b67b87.js.map": "/static/js/main.78b67b87.js.map",
+    "787.48bc3d2f.chunk.js.map": "/static/js/787.48bc3d2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d72b5b07.css",
+    "static/js/main.78b67b87.js"
+  ]
+}
