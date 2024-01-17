@@ -24,8 +24,8 @@ export class Gallery extends Component {
                 {name: "Kalara's Last Defense", cssName: "kalaras"}],
             projects: [<TrainedTerrain />, <NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
     
-        if(this.state.projectData.length != this.state.projects.length) {
-            throw "names do not match projects";
+        if(this.state.projectData.length !== this.state.projects.length) {
+            throw new Error("names do not match projects");
         }
     }
 
@@ -42,7 +42,7 @@ export class Gallery extends Component {
     renderButtons = () => {
         return [...Array(this.state.projects.length).keys()].map(ele => {
             return <ProjectButton active={ele === this.state.galleryIndex} 
-            onClick={() => {this.buttonClick(ele)}} projectData={this.state.projectData[ele]}/>
+            onClick={() => {this.buttonClick(ele)}} projectData={this.state.projectData[ele]} key={ele}/>
         })
     }
 
