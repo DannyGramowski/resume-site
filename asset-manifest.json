@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resume-site/static/css/main.a0358f7f.css",
+    "main.css": "/resume-site/static/css/main.b1827cb0.css",
     "main.js": "/resume-site/static/js/main.b1d71890.js",
     "static/js/787.48bc3d2f.chunk.js": "/resume-site/static/js/787.48bc3d2f.chunk.js",
     "static/media/Danny zipline.png": "/resume-site/static/media/Danny zipline.ed6742a3d19459ea96f1.png",
@@ -13,12 +13,12 @@
     "static/media/Nutriapp.png": "/resume-site/static/media/Nutriapp.b8a6524e45666e3381aa.png",
     "static/media/linkedin.png": "/resume-site/static/media/linkedin.ce57aaffbfbffc186745.png",
     "index.html": "/resume-site/index.html",
-    "main.a0358f7f.css.map": "/resume-site/static/css/main.a0358f7f.css.map",
+    "main.b1827cb0.css.map": "/resume-site/static/css/main.b1827cb0.css.map",
     "main.b1d71890.js.map": "/resume-site/static/js/main.b1d71890.js.map",
     "787.48bc3d2f.chunk.js.map": "/resume-site/static/js/787.48bc3d2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0358f7f.css",
+    "static/css/main.b1827cb0.css",
     "static/js/main.b1d71890.js"
   ]
 }
