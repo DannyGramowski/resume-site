@@ -10,12 +10,14 @@
   --aquavybesbg: #ccfffc;
   --bunchnotesbg: #f7efb2;
   --kalarasbg: #ec4242;
+  --terrainbg: #22401b;
 
   --nutriappft: #ffffff;
   --ghostjazzft: #3c3b3b;
   --aquavybesft: #0195de;
   --bunchnotesft: #000000;
   --kalarasft: #fff5e0;
+  --terrainft: #b40808;
 }
 
 body {
@@ -55,6 +57,11 @@ code {
 .kalaras {
   background-color: var(--kalarasbg);
   color: var(--kalarasft);
+}
+
+.trainedterrain {
+  background-color: var(--terrainbg);
+  color: var(--terrainft);
 }
 
 .menu-bar-container {

@@ -5,6 +5,10 @@ import dannyImage from "./files/Danny zipline.png";
 
 export class MainPage extends Component {
 
+    createDivider = () => {
+        return <Container className="divider"/>
+    }
+
     createSkill = (skill, hoverText, onLeft) => {
         return <ListGroupItem className="skill-item skill">{skill}
             {hoverText != "" ? <span className={"skill-tooltip " + (onLeft ? "left-tooltip" : "right-tooltip")}>{hoverText}</span> : <Container></Container>}
@@ -47,9 +51,12 @@ export class MainPage extends Component {
                             </Col>
                         </Row>
 
+                        {this.createDivider()}
+
                         {/* skills */}
-                        <Row>
+                        <Row className="skills-section-container">
                             {/* languages. Add on hover that shows what projects I used them on*/}
+                                <Container className="skills-text">Skills</Container>
                                 <Row className="skills-container center-horiz">
                                     <ListGroup className="skills-col" >
                                         <ListGroupItem className="skill-item skill-header">Languages</ListGroupItem>

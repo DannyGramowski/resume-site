@@ -5,8 +5,3 @@ Pages
 -aqua vybes page
 -nutriapp page
 
-About
--blurb
--education
--skills section -- add on hover that shows what projects I used them on.
--hobbies

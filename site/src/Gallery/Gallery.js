@@ -7,6 +7,7 @@ import { BunchNotes } from "../Projects/BunchNotes"
 import { ArrowButton } from "./ArrowButton";
 import { AquaVybes } from "../Projects/AquaVybes";
 import { KalarasLastDefense } from "../Projects/KalarasLastDefense";
+import { TrainedTerrain } from "../Projects/TrainedTerrain";
 import { ProjectButton } from "./ProjectButton";
 
 export class Gallery extends Component {
@@ -15,12 +16,13 @@ export class Gallery extends Component {
     constructor(props) {
         super(props);
         this.state = {galleryIndex: 0, 
-            projectData: [{name: "NutriApp", cssName: "nutriapp"},
-             {name: "Ghost Jazz", cssName: "ghostjazz" },
-              {name: "AquaVybes", cssName: "aquavybes"},
-               {name: "BunchNotes", cssName: "bunchnotes"},
-               {name: "Kalara's Last Defense", cssName: "kalaras"}],
-            projects: [<NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
+            projectData: [{name: "Trained Terrain", cssName: "trainedterrain"},
+                {name: "NutriApp", cssName: "nutriapp"},
+                {name: "Ghost Jazz", cssName: "ghostjazz" },
+                {name: "AquaVybes", cssName: "aquavybes"},
+                {name: "BunchNotes", cssName: "bunchnotes"},
+                {name: "Kalara's Last Defense", cssName: "kalaras"}],
+            projects: [<TrainedTerrain />, <NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
     
         if(this.state.projectData.length != this.state.projects.length) {
             throw "names do not match projects";
