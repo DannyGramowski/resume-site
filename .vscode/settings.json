@@ -1,0 +1,7 @@
+{
+    "css.styleSheets": [
+        "../site/src/App.css",
+        "../site/src/Gallery/Gallery.css",
+        "../site/src/Projects/Projects.css"
+    ]
+}
