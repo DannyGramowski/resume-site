@@ -69,6 +69,9 @@ export class MainPage extends Component {
                                     </ListGroup>
 
                                     <ListGroup className="skill-filler" >
+                                        <Container className="center skill-filler-background-container">
+                                            <Container className="skill-filler-background"></Container>
+                                        </Container>
                                         {/* create empty space */}
                                     </ListGroup>
                                     
