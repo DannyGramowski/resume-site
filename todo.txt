@@ -7,6 +7,5 @@ Pages
 
 fix about english
 fix english on projects
-update resume
 
 

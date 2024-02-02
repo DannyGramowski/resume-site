@@ -39,11 +39,10 @@ export class MainPage extends Component {
                                 <Row className="center-horiz">
                                     <Container className="blurb-text">
                                         Hi I am Danny Gramowski. I am a second year software engineering student at RIT. I 
-                                        believe that high quality software is made by dedicated developers in a highly collaborative
-                                        environment. You need both exceptional developers and the collaborative environment for 
-                                        everyone to thrive. I am a naturally curios developer that enjoys learning about new topics as well as
-                                        a team player. I love when the entire team is bouncing ideas off of each other until the best 
-                                        possible idea is agreed upon by the group.
+                                        believe high quality software is made by dedicated developers in a highly collaborative
+                                        environment. You need both exceptional developers and the collaboration for everyone to 
+                                        thrive. I am a naturally curious developer that enjoys learning about new topics as well
+                                        as working on team projects.
                                     </Container>
 
                                 </Row>
