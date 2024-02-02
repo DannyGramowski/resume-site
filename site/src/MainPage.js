@@ -13,7 +13,7 @@ export class MainPage extends Component {
 
     createSkill = (skill, hoverText, onLeft) => {
         return <ListGroupItem className="skill-item skill" onMouseEnter={() => this.setState({projectText: hoverText})} onMouseLeave={() => this.setState({projectText: ""})}>{skill}
-            {hoverText != "" ? <span className={"skill-tooltip " + (onLeft ? "left-tooltip" : "right-tooltip")}>{hoverText}</span> : <Container></Container>}
+            {hoverText !== "" ? <span className={"skill-tooltip " + (onLeft ? "left-tooltip" : "right-tooltip")}>{hoverText}</span> : <Container></Container>}
         </ListGroupItem>
 
     }
@@ -28,22 +28,22 @@ export class MainPage extends Component {
                         <Row className="center blurb-container">
                             <Col>
                                 <Row >
-                                    <Container className="name-text">I am Danny Gramowski</Container>
+                                    <Container className="name-text">Danny Gramowski</Container>
                                 </Row>
                                 <Container className="center-horiz">
-                                    <img src={dannyImage} height={dannyHeight} width={dannyHeight * dannyRatio}/>
+                                    <img src={dannyImage} height={dannyHeight} width={dannyHeight * dannyRatio} alt=" of Danny"/>
                                     {/* <Container className="image-placeholder" /> */}
                                 </Container>
                                 
 
                                 <Row className="center-horiz">
                                     <Container className="blurb-text">
-                                        I am a second year software engineering student at RIT. I have
-                                        experience in a large number of different fields within computer science. I enjoy learning and 
-                                        one way I scratch this itch is to try something new. I started programming in my FIRST robotics team 
-                                        in 9th grade. During COVID, I expanded my horizons and began developing games in UNITY. From there I went on 
-                                        to college and began trying all sorts of coding diciplinces. I have done personal projects
-                                        in web development, machine learning, more game development.  
+                                        Hi I am Danny Gramowski. I am a second year software engineering student at RIT. I 
+                                        believe that high quality software is made by dedicated developers in a highly collaborative
+                                        environment. You need both exceptional developers and the collaborative environment for 
+                                        everyone to thrive. I am a naturally curios developer that enjoys learning about new topics as well as
+                                        a team player. I love when the entire team is bouncing ideas off of each other until the best 
+                                        possible idea is agreed upon by the group.
                                     </Container>
 
                                 </Row>
@@ -63,18 +63,18 @@ export class MainPage extends Component {
                                     <ListGroup className="skills-col" >
                                         <ListGroupItem className="skill-item skill-header">Languages</ListGroupItem>
                                         {this.createSkill("C#", "Nutriapp, Ghost Jazz, Kalaras Last Defense", true)}
-                                        {this.createSkill("Java", "AquaVybes, Computer Science 1(class), Computer Science 1(class)", true)}
-                                        {this.createSkill("Python", "BunchNotes, Web Engineering(class)", true)}
-                                        {this.createSkill("C/C++", "Personal Software Engineering(class)", true)}
-                                        {this.createSkill("SQL", "BunchNotes, Web Engineering(class)", true)}
-                                        {this.createSkill("JavaScript/Typescript", "Nutriapp, BunchNotes, AquaVybes, Web Engineering(class)", true)}
+                                        {this.createSkill("Java", "AquaVybes, Computer Science 1 (class), Computer Science 1 (class)", true)}
+                                        {this.createSkill("Python", "BunchNotes, Web Engineering (class)", true)}
+                                        {this.createSkill("C/C++", "Personal Software Engineering (class)", true)}
+                                        {this.createSkill("SQL", "BunchNotes, Web Engineering (class)", true)}
+                                        {this.createSkill("JavaScript/Typescript", "Nutriapp, BunchNotes, AquaVybes, Web Engineering (class)", true)}
                                     </ListGroup>
 
                                     <ListGroup className="skill-filler" >
                                             <Container className="skill-filler-background" />
                                         {/* create empty space */}
                                     </ListGroup>
-                                    <ListGroup className="skills-col">
+                                    <ListGroup className="center-skills-col skills-col">
                                         <ListGroupItem className="skill-item skill-header">Projects Used In</ListGroupItem>
                                         {this.state.projectText === "" ? <Container /> :
                                         <Container className="project-text-container">
@@ -93,14 +93,14 @@ export class MainPage extends Component {
 
                                         <ListGroupItem className="skill-item skill-header">Miscellaneous</ListGroupItem>
                                         {this.createSkill("Windows", "Main platform", false)}
-                                        {this.createSkill("Linux", "Personal Software Engineering(class)", false)}
+                                        {this.createSkill("Linux", "Personal Software Engineering (class)", false)}
                                         {this.createSkill("Unity", "Ghost Jazz, Kalaras Last Defense", false)}
                                         {this.createSkill("Angular", "AquaVybes", false)}
-                                        {this.createSkill("React", "This website, Web Engineering(class)", false)}
-                                        {this.createSkill("Spring Boot", "AquaVybes", false)}
+                                        {this.createSkill("React", "This website, Web Engineering (class)", false)}
+                                        {this.createSkill("Spring", "AquaVybes", false)}
                                         {this.createSkill("FastAPI", "BunchNotes", false)}
                                         {this.createSkill("TensorFlow", "Trained Terrain", false)}
-                                        {this.createSkill("PostgreSQL", "BunchNotes, Web Engineering(class)", false)}
+                                        {this.createSkill("PostgreSQL", "BunchNotes, Web Engineering (class)", false)}
                                     </ListGroup>
                                 </Row>
 

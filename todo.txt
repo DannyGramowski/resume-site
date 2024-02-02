@@ -5,6 +5,8 @@ Pages
 -aqua vybes page
 -nutriapp page
 
-fix resume download
-remove bubble for skill headers
+fix about english
+fix english on projects
+update resume
+
 

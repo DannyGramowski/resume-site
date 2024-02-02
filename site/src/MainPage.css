@@ -20,8 +20,9 @@
 }
 
 .name-text {
-    font-size: 35px;
+    font-size: 70px;
     text-align: center;
+    font-family: Tahoma;
 }
 
 .image-placeholder {
@@ -50,11 +51,15 @@
 }
 
 .skills-col {
-    max-width: 200px;
+    max-width: 250px;
     padding-left: 0;
     list-style-type: none;
     /* border: 3px solid #4e4f54 ;
     border-radius: 10px; */
+}
+
+.center-skills-col {
+    
 }
 
 .skill-filler {
@@ -79,7 +84,7 @@
 .skill-header {
     text-align: center;
     font-size: 22px;
-    padding: 4px 2px;
+    padding: 12px 2px;
 }
 
 .skill {
@@ -90,12 +95,14 @@
 }
 
 .project-text-container {
-    width: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .project-text {
     background-color: var(--green);
     text-align: center;
+    width: 150px;
     border-radius: 5px;
     font-size: 17px;
     padding: 4px;

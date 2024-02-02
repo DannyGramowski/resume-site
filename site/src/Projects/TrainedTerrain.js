@@ -16,8 +16,8 @@ export class TrainedTerrain extends Component {
                         <Col className="center">
                             <Container className="nutri-app-logo-container">
                                 <Link to="/nutri-app" >
-                                    <img className=" pointer-cursor" src={logo} alt="Ghost Jazz logo" width={imageWidth} height={imageRatio * imageWidth}/>
-                                    <div className="logo-text" style={{marginTop: "-15px"}}>Nutriapp</div>
+                                    <img className=" pointer-cursor" src={logo} alt="Trained Terrain logo" width={imageWidth} height={imageRatio * imageWidth}/>
+                                    <div className="logo-text" style={{marginTop: "-15px"}}>Trained Terrain</div>
                                 </Link>
                             </Container>
                         </Col>
