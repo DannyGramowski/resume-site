@@ -41,6 +41,11 @@ a{
     margin-bottom: 65px;
 }
 
+.idea-card-logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .ghost-jazz-logo {
     justify-self: center;
     margin-bottom: 25px;

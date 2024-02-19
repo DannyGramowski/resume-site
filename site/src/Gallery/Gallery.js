@@ -9,6 +9,7 @@ import { AquaVybes } from "../Projects/AquaVybes";
 import { KalarasLastDefense } from "../Projects/KalarasLastDefense";
 import { TrainedTerrain } from "../Projects/TrainedTerrain";
 import { ProjectButton } from "./ProjectButton";
+import { IdeaCard } from "../Projects/IdeaCard";
 
 export class Gallery extends Component {
     
@@ -16,13 +17,14 @@ export class Gallery extends Component {
     constructor(props) {
         super(props);
         this.state = {galleryIndex: 0, 
-            projectData: [{name: "Trained Terrain", cssName: "trainedterrain"},
+            projectData: [{name:"IDEA card", cssName:"ideacard"},
+                {name: "Trained Terrain", cssName: "trainedterrain"},
                 {name: "NutriApp", cssName: "nutriapp"},
                 {name: "Ghost Jazz", cssName: "ghostjazz" },
                 {name: "AquaVybes", cssName: "aquavybes"},
                 {name: "BunchNotes", cssName: "bunchnotes"},
                 {name: "Kalara's Last Defense", cssName: "kalaras"}],
-            projects: [<TrainedTerrain />, <NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
+            projects: [<IdeaCard />, <TrainedTerrain />, <NutriApp />, <GhostJazz />, <AquaVybes />, <BunchNotes />, <KalarasLastDefense />]};
     
         if(this.state.projectData.length !== this.state.projects.length) {
             throw new Error("names do not match projects");

@@ -11,6 +11,9 @@
   --bunchnotesbg: #f7efb2;
   --kalarasbg: #ec4242;
   --terrainbg: #22401b;
+  --ideabg: rgba(50,67,95,1);     
+  /* --blue: rgba(174,201,230,1);
+  --darkblue: rgba(50,67,95,1); */
 
   --nutriappft: #ffffff;
   --ghostjazzft: #3c3b3b;
@@ -18,6 +21,15 @@
   --bunchnotesft: #000000;
   --kalarasft: #fff5e0;
   --terrainft: #e10e0e;
+  --ideaft: #ffffff;
+
+
+}
+
+#root {
+  position: absolute;
+  width: 100vw;
+  left: 0;
 }
 
 
@@ -61,6 +73,11 @@ code {
 .trainedterrain {
   background-color: var(--terrainbg);
   color: var(--terrainft);
+}
+
+.ideacard {
+  background-color: var(--ideabg);
+  color: var(--ideaft);
 }
 
 .menu-bar-container {
