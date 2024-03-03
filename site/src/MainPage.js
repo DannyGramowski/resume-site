@@ -63,10 +63,10 @@ export class MainPage extends Component {
                                         <ListGroupItem className="skill-item skill-header">Languages</ListGroupItem>
                                         {this.createSkill("C#", "Nutriapp, Ghost Jazz, Kalaras Last Defense", true)}
                                         {this.createSkill("Java", "AquaVybes, Computer Science 1 (class), Computer Science 1 (class)", true)}
-                                        {this.createSkill("Python", "BunchNotes, Web Engineering (class)", true)}
+                                        {this.createSkill("Python", "IDEA Card, BunchNotes, Web Engineering (class)", true)}
                                         {this.createSkill("C/C++", "Personal Software Engineering (class)", true)}
                                         {this.createSkill("SQL", "BunchNotes, Web Engineering (class)", true)}
-                                        {this.createSkill("JavaScript/Typescript", "Nutriapp, BunchNotes, AquaVybes, Web Engineering (class)", true)}
+                                        {this.createSkill("JavaScript/Typescript", "IDEA Card, Nutriapp, BunchNotes, AquaVybes, Web Engineering (class)", true)}
                                     </ListGroup>
 
                                     <ListGroup className="skill-filler" >
@@ -94,10 +94,10 @@ export class MainPage extends Component {
                                         {this.createSkill("Windows", "Main platform", false)}
                                         {this.createSkill("Linux", "Personal Software Engineering (class)", false)}
                                         {this.createSkill("Unity", "Ghost Jazz, Kalaras Last Defense", false)}
-                                        {this.createSkill("Angular", "AquaVybes", false)}
+                                        {this.createSkill("Angular", "IDEA Card, AquaVybes", false)}
                                         {this.createSkill("React", "This website, Web Engineering (class)", false)}
                                         {this.createSkill("Spring", "AquaVybes", false)}
-                                        {this.createSkill("FastAPI", "BunchNotes", false)}
+                                        {this.createSkill("FastAPI", "IDEA Card, BunchNotes", false)}
                                         {this.createSkill("TensorFlow", "Trained Terrain", false)}
                                         {this.createSkill("PostgreSQL", "BunchNotes, Web Engineering (class)", false)}
                                     </ListGroup>
