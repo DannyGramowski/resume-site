@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume-site/static/css/main.ed818713.css",
-    "main.js": "/resume-site/static/js/main.35b0eef3.js",
+    "main.css": "/resume-site/static/css/main.cdf8b5d8.css",
+    "main.js": "/resume-site/static/js/main.4fbe5c46.js",
     "static/js/787.48bc3d2f.chunk.js": "/resume-site/static/js/787.48bc3d2f.chunk.js",
     "static/media/Danny zipline.png": "/resume-site/static/media/Danny zipline.ed6742a3d19459ea96f1.png",
     "static/media/background image.jpg": "/resume-site/static/media/background image.d8f07162ac042b8687b7.jpg",
@@ -15,12 +15,12 @@
     "static/media/Nutriapp.png": "/resume-site/static/media/Nutriapp.b8a6524e45666e3381aa.png",
     "static/media/linkedin.png": "/resume-site/static/media/linkedin.ce57aaffbfbffc186745.png",
     "index.html": "/resume-site/index.html",
-    "main.ed818713.css.map": "/resume-site/static/css/main.ed818713.css.map",
-    "main.35b0eef3.js.map": "/resume-site/static/js/main.35b0eef3.js.map",
+    "main.cdf8b5d8.css.map": "/resume-site/static/css/main.cdf8b5d8.css.map",
+    "main.4fbe5c46.js.map": "/resume-site/static/js/main.4fbe5c46.js.map",
     "787.48bc3d2f.chunk.js.map": "/resume-site/static/js/787.48bc3d2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed818713.css",
-    "static/js/main.35b0eef3.js"
+    "static/css/main.cdf8b5d8.css",
+    "static/js/main.4fbe5c46.js"
   ]
 }
