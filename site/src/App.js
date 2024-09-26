@@ -6,7 +6,7 @@ import { Projects } from './Projects';
 import { GhostJazzPage } from './Projects/GhostJazz';
 import { AquaVybesPage } from './Projects/AquaVybes';
 import { BunchNotesPage } from './Projects/BunchNotes';
-import { NutriAppPage } from './Projects/NutriApp'
+import { NutriAppPage } from './Projects/Nutriapp'
 import { KalarasLastDefensePage } from './Projects/KalarasLastDefense';
 import { Component } from 'react';
 

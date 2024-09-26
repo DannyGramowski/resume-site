@@ -30,7 +30,7 @@ export class MainPage extends Component {
                                 <Row >
                                     <Container className="name-text">Danny Gramowski</Container>
                                 </Row>
-                                <Container className="center-horiz">
+                                <Container className="center-horiz" style={{marginBottom: "2vh"}}>
                                     <img src={dannyImage} height={dannyHeight} width={dannyHeight * dannyRatio} alt=" of Danny"/>
                                     {/* <Container className="image-placeholder" /> */}
                                 </Container>
@@ -38,7 +38,7 @@ export class MainPage extends Component {
 
                                 <Row className="center-horiz">
                                     <Container className="blurb-text">
-                                        Hi I am Danny Gramowski. I am a second year software engineering student at RIT. I 
+                                        Hi I am Danny Gramowski. I am a third year software engineering student at RIT. I 
                                         believe high quality software is made by dedicated developers in a highly collaborative
                                         environment. You need both exceptional developers and the collaboration for everyone to 
                                         thrive. I am a naturally curious developer that enjoys learning about new topics as well
@@ -62,7 +62,7 @@ export class MainPage extends Component {
                                     <ListGroup className="skills-col" >
                                         <ListGroupItem className="skill-item skill-header">Languages</ListGroupItem>
                                         {this.createSkill("C#", "Nutriapp, Ghost Jazz, Kalaras Last Defense", true)}
-                                        {this.createSkill("Java", "AquaVybes, Computer Science 1 (class), Computer Science 1 (class)", true)}
+                                        {this.createSkill("Java", "AquaVybes, Software Engineering 1 (class), Software Engineering 2 (class)", true)}
                                         {this.createSkill("Python", "IDEA Card, BunchNotes, Web Engineering (class)", true)}
                                         {this.createSkill("C/C++", "Personal Software Engineering (class)", true)}
                                         {this.createSkill("SQL", "BunchNotes, Web Engineering (class)", true)}

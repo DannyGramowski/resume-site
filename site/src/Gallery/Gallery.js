@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Container } from "reactstrap";
 import "./Gallery.css"
 import { GhostJazz } from "../Projects/GhostJazz";
-import { NutriApp } from "../Projects/NutriApp";
+import { NutriApp } from "../Projects/Nutriapp";
 import { BunchNotes } from "../Projects/BunchNotes"
 import { ArrowButton } from "./ArrowButton";
 import { AquaVybes } from "../Projects/AquaVybes";
