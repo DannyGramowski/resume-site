@@ -10,7 +10,7 @@ export class NavBar extends Component {
     state = {activeItem: 0}
 
     getClassNames =  (num) => {
-        return num === this.state.activeItem ? 'menu-bar-item active-bar-item' : 'menu-bar-item'; 
+        return num === this.state.activeItem ? ' active-bar-item' : ''; 
     }
 
     render() {
@@ -22,37 +22,34 @@ export class NavBar extends Component {
         return (
         <Container className='menu-bar-container'>
             <Container className='menu-bar'>
-                    <Row className='menu-bar-item-row '>
-                        <Col className='menu-bar-item-container'>
-                            <Link to='/' className={this.getClassNames(0)} onClick={() => this.setState({activeItem: 0})}>About</Link>
-                        </Col>
-                        <Col className='menu-bar-item-container'>
-                            <Link to='/projects' className={this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Projects</Link>
-                        </Col>
-                        <Col className='menu-bar-item-container'>
-                            <a href={resume} download="Danny_Resume.pdf" className="menu-bar-item">
-                                <div>
-                                    Resume
-                                </div>
-                            </a>
-                        </Col>
-                        <Col className='menu-bar-item-container'>
-                            <a href="https://dannytga.itch.io/" className='icon' target='_blank' rel="noreferrer">
-                                <img src={itch} width={width} height={itchRation * width} alt="itch.io"/>
-                            </a>
-                        </Col>
-                        <Col className='menu-bar-item-container'>
-                            <a href="https://github.com/DannyGramowski" className='icon' target='_blank' rel="noreferrer">
-                                <img src={github} width={width} height={githubRatio * width} alt="github"/>
-                            </a>
-                        </Col>
-                        <Col className='menu-bar-item-container'>
-                            <a href="https://www.linkedin.com/in/daniel-gramowski-2b8391253/" 
-                            className='icon' target='_blank' rel="noreferrer">
-                                <img src={linkedin} width={width} height={linkedinRation * width} alt='linkedin'/>
-                            </a>
-                        </Col>
-                    </Row>  
+                <Row className='menu-bar'>
+                    <Col className='menu-bar-item-container'>
+                        <Link to='/' className={"menu-bar-item" + this.getClassNames(0)} onClick={() => this.setState({activeItem: 0})}>About</Link>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <Link to='/projects' className={"menu-bar-item" + this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Projects</Link>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <a href={resume} download="Danny_Resume.pdf" className="menu-bar-item">
+                            <div>Resume</div>
+                        </a>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <a href="https://dannytga.itch.io/" className='icon' target='_blank' rel="noreferrer">
+                            <img src={itch} width={width} height={itchRation * width} alt="itch.io"/>
+                        </a>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <a href="https://github.com/DannyGramowski" className='icon' target='_blank' rel="noreferrer">
+                            <img src={github} width={width} height={githubRatio * width} alt="github"/>
+                        </a>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <a href="https://www.linkedin.com/in/daniel-gramowski-2b8391253/" className='icon' target='_blank' rel="noreferrer">
+                            <img src={linkedin} width={width} height={linkedinRation * width} alt='linkedin'/>
+                        </a>
+                    </Col>
+                </Row>  
             </Container>
             <Container className='menu-bar-divider' />
         </Container>

@@ -4,6 +4,8 @@ Pages
 
 Add Experience Page
 Improve UI on top of main page
+fix toolbar buttons
+
 fix about english
 fix english on projects
 
