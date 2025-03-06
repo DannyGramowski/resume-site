@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Container, Col, } from "reactstrap";
 import { Link } from "react-router-dom";
-import "./Projects.css";
+import "./Projects.scss";
 import logo from "./images/ghost-jazz-logo.png";
 
 //https://itch.io/jam/rit-game-developers-club-halloween-2023-game-jam/rate/2340203

@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Container, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import logo from  "./images/Nutriapp.png";
-import "./Projects.css";
+import "./Projects.scss";
 
 export class NutriApp extends Component {
     render() {

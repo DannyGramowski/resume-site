@@ -1,7 +1,7 @@
 import { Container, Col } from "reactstrap";
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Projects.css";
+import "./Projects.scss";
 import logo from "./images/Kalaras.png";
 
 export class KalarasLastDefense extends Component {

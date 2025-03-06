@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './projects.css'
+import './projects.scss'
 import { Container, Col } from "reactstrap";
 import { Gallery } from "./Gallery/Gallery";
 import { GhostJazz } from "./Projects/GhostJazz";

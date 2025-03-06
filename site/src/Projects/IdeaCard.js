@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Container, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import "./Projects.css"
+import "./Projects.scss"
 import logo from "./images/Ideacard.png";
 
 export class IdeaCard extends Component {

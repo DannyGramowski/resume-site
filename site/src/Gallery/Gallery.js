@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Container } from "reactstrap";
-import "./Gallery.css"
+import "./Gallery.scss"
 import { GhostJazz } from "../Projects/GhostJazz";
 import { NutriApp } from "../Projects/Nutriapp";
 import { BunchNotes } from "../Projects/BunchNotes"

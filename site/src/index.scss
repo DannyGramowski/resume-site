@@ -80,10 +80,24 @@ code {
   color: var(--ideaft);
 }
 
+.container {
+  max-width: none !important;
+  margin: 0px 0px ;
+  padding: 0px 0px;
+  max-width: none ;
+}
+
+%full-width-container {
+  margin: 0px 0px !important;
+  padding: 0px 0px !important;
+  max-width: none !important;
+}
+
 .menu-bar-container {
   position: sticky;
   top: 0;
   z-index: 2;
+  @extend %full-width-container;
 }
 
 .menu-bar {
@@ -92,6 +106,8 @@ code {
   background-color: var(--blue);
   display: flex;  
   align-items: center;
+  @extend %full-width-container;
+
 }
 
 .menu-bar-divider {
@@ -100,6 +116,8 @@ code {
   background-color: var(--green);
   margin-bottom: 0px;
   padding-bottom: 0px;
+  @extend %full-width-container;
+
 }
 
 .menu-bar-item-row {

@@ -1,10 +1,9 @@
 Pages
--bunchnotes page
--kalaras page
--ghost jazz page
--aqua vybes page
--nutriapp page
+- too deep
+- QWER-KEY
 
+Add Experience Page
+Improve UI on top of main page
 fix about english
 fix english on projects
 

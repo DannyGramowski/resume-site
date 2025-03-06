@@ -1,0 +1,169 @@
+.main-page {
+    background-image: url(files/background_image.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    
+    .page-container {
+     
+        
+        .blurb-container {
+            width: inherit;
+            margin: 10px 0px 30px;
+
+            .name-text {
+                font-size: calc(2.5vw + 2.5vh);
+                text-align: center;
+                font-family: Tahoma;
+                margin-bottom: 2vh;
+            }
+
+            .danny-image-container {
+                margin-right: 2vw;
+                display: flex;
+                justify-content: end;
+                
+                $danny-image-width: 35vw;
+                $danny-image-ratio: 0.666;
+                .danny-image {
+                    width: $danny-image-width;
+                    height: calc($danny-image-width / $danny-image-ratio);
+                    border-radius: 3vw;
+                }
+            }
+
+            .blurb-text {
+                font-size: calc(1.55vw + 1.55vh);
+                width: 80%;
+                color: black;
+            }
+        }
+
+        .divider {
+            background-color: var(--green);
+            width: 100%;
+            height: 20px;
+        }
+
+        .skills-section-container {
+            margin: 30px 0px 30px;
+        
+            .skills-text {
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .skills-col {
+                max-width: 250px;
+                padding-left: 0;
+                list-style-type: none;
+
+                .skill-item {
+                    margin-bottom: 10px;
+                    height: 6vh;
+                    list-style-type: none;
+                    width: 100%;
+                    padding: 10px;
+                }
+
+                .skill-header {
+                    text-align: center;
+                    font-size: calc(1.5vw + 1.5vh);
+                    padding: 12px 2px;
+                    margin-bottom: 3vh;
+                }
+
+                .skill {
+                    padding-left: 1vw;
+                    position: relative;
+                    display: inline-block;
+                    font-size: calc(1.25vw + 1.25vh);
+                    line-height: calc(1.25vw + 1.25vh);
+                    text-align: inherit;
+                
+                    .skill-tooltip {
+                        visibility: hidden;
+                        width: 140px;
+                        background-color: var(--green);
+                        color: #4e4f54;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 5px 2px;
+                        
+                        /* Position the tooltip */
+                        position: absolute;
+                        z-index: 1;
+                        top: -5px;
+                    }
+                    
+                    
+                    .left-tooltip {
+                        right: 105%;
+                    }
+                    
+                    .right-tooltip {
+                        left: 50%;
+                    }
+                    
+                    &:hover {
+                        background-color: var(--blue);
+                        border-radius: 5px;
+                    }
+                }
+
+                .project-text-container {
+                    display: flex;
+                    justify-content: center;
+                    
+                    .project-text {
+                        background-color: var(--green);
+                        text-align: center;
+                        width: 15vw;
+                        border-radius: 5px;
+                        font-size: calc(1.25vw + 1.25vh);
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.center-skills-col {
+    
+}
+
+.skill-filler {
+    max-width: 250px;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+    border-radius: 5px;
+}
+
+.skill-filler-background-container {
+    height: 100%;
+}
+
+.skill-filler-background {
+    width: 3px;
+    background-color: #4e4f54;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skill:hover .skill-tooltip{
+    /* visibility: visible; */
+  }
+

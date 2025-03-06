@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Container } from "reactstrap";
-import "./Projects.css"
+import "./Projects.scss"
 
 export class EquationModeler extends Component {
     
