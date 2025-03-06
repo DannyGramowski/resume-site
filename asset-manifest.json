@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume-site/static/css/main.73b88bac.css",
-    "main.js": "/resume-site/static/js/main.70061109.js",
+    "main.css": "/resume-site/static/css/main.499cf484.css",
+    "main.js": "/resume-site/static/js/main.7e1c0652.js",
     "static/js/787.48bc3d2f.chunk.js": "/resume-site/static/js/787.48bc3d2f.chunk.js",
     "static/media/Danny zipline.png": "/resume-site/static/media/Danny zipline.ed6742a3d19459ea96f1.png",
     "static/media/background_image.jpg": "/resume-site/static/media/background_image.d8f07162ac042b8687b7.jpg",
@@ -14,13 +14,14 @@
     "static/media/github.png": "/resume-site/static/media/github.cb218f44e20683a54494.png",
     "static/media/Nutriapp.png": "/resume-site/static/media/Nutriapp.b8a6524e45666e3381aa.png",
     "static/media/linkedin.png": "/resume-site/static/media/linkedin.ce57aaffbfbffc186745.png",
+    "static/media/aurora-machine-logo.svg": "/resume-site/static/media/aurora-machine-logo.cc5fb207d99a68b36efa7ae8c1bb1b7f.svg",
     "index.html": "/resume-site/index.html",
-    "main.73b88bac.css.map": "/resume-site/static/css/main.73b88bac.css.map",
-    "main.70061109.js.map": "/resume-site/static/js/main.70061109.js.map",
+    "main.499cf484.css.map": "/resume-site/static/css/main.499cf484.css.map",
+    "main.7e1c0652.js.map": "/resume-site/static/js/main.7e1c0652.js.map",
     "787.48bc3d2f.chunk.js.map": "/resume-site/static/js/787.48bc3d2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73b88bac.css",
-    "static/js/main.70061109.js"
+    "static/css/main.499cf484.css",
+    "static/js/main.7e1c0652.js"
   ]
 }
