@@ -27,7 +27,10 @@ export class NavBar extends Component {
                         <Link to='/' className={"menu-bar-item" + this.getClassNames(0)} onClick={() => this.setState({activeItem: 0})}>About</Link>
                     </Col>
                     <Col className='menu-bar-item-container'>
-                        <Link to='/projects' className={"menu-bar-item" + this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Projects</Link>
+                        <Link to='/experience' className={"menu-bar-item" + this.getClassNames(1)} onClick={() => this.setState({activeItem: 1})}>Experience</Link>
+                    </Col>
+                    <Col className='menu-bar-item-container'>
+                        <Link to='/projects' className={"menu-bar-item" + this.getClassNames(2)} onClick={() => this.setState({activeItem: 2})}>Projects</Link>
                     </Col>
                     <Col className='menu-bar-item-container'>
                         <a href={resume} download="Danny_Resume.pdf" className="menu-bar-item">

@@ -9,6 +9,7 @@ import { BunchNotesPage } from './Projects/BunchNotes';
 import { NutriAppPage } from './Projects/Nutriapp'
 import { KalarasLastDefensePage } from './Projects/KalarasLastDefense';
 import { Component } from 'react';
+import { Experience } from './Experience';
 
 export class App extends Component {
 
@@ -25,6 +26,7 @@ export class App extends Component {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/resume-site" element={<MainPage />} />
+          <Route path="/experience" element={<Experience />}/>
           <Route path="/projects" element={<Projects />} />
           <Route path="/ghost-jazz" element={<GhostJazzPage /> }/>
           <Route path="/aqua-vybes" element={<AquaVybesPage /> }/>

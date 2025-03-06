@@ -1,0 +1,79 @@
+.experience-text {
+    font-size: calc(2.75vw + 2.75vh);
+    text-align: center;
+    // width: 100vw;
+    display: block;
+}
+
+.company-list {
+    display: flex;
+    justify-content: center;
+
+
+    .company-card {
+        width: 80%;
+        border: 1px solid black;
+        border-radius: 1vw;
+        margin: 2vw;
+        padding: 1vw;
+
+        *:not(:last-child) { 
+            margin-bottom: .75vh;
+        }
+
+
+        .company-position-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            & * {
+                width: auto;
+            }
+            .company-position-name {
+                font-size: calc(1.3vw + 1.3vh);
+            }
+
+            .company-date {
+                font-size: calc(1.2vw + 1.2vh);
+            }
+        }
+
+        .company-name-row {
+            display: flex;
+            justify-content: space-between;
+
+            & * {
+                width: auto;
+            }
+
+            $company-image-size: 7vw;
+            img {
+                width: $company-image-size;
+                height: auto;
+            }
+
+            .company-name {
+                font-size: calc(1.6vw + 1.6vh);
+                text-align: center;
+            }
+
+            .spacer {
+                width: $company-image-size;
+            }
+        }
+
+        .company-skills-row {
+            font-size: calc(.9vw + .9vh);
+            padding-left: calc(var(--bs-gutter-x)* .5); 
+            & * {
+                width: auto;
+                padding: 0px;
+            }
+        }
+
+        .company-work-text {
+            font-size: calc(.9vw + .9vh);
+        }
+    }
+}
