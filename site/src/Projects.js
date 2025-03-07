@@ -1,9 +1,8 @@
 import { Component } from "react";
 import './projects.scss'
 import { Container, Col } from "reactstrap";
-import { Gallery } from "./Gallery/Gallery";
-import { GhostJazz } from "./Projects/GhostJazz";
-import { BunchNotes } from "./Projects/BunchNotes";
+import { Gallery } from "./gallery/Gallery";
+
 
 export class Projects extends Component {
 
@@ -11,7 +10,7 @@ export class Projects extends Component {
         //image gallery here and each project has their own page. make it a square
         return(
             <Container className="project-page">
-               <Gallery />
+                <Gallery />
             </Container>
         );
     }

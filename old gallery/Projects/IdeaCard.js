@@ -24,7 +24,8 @@ export class IdeaCard extends Component {
                                 <p style={{width: "500px", marginBottom: "-20px", color: "white"}} >
                                     A website built as part of the Google Developer Student Club Solution Challenge. This website
                                     allows people with disabilities to fill in their disabilities and desired accommodations. Then 
-                                    they can export their information to a variety of formats to give to managers and hiring managers to help alleviate some of the stigma and misinformation surrounding disabilities.
+                                    they can export their information to a variety of formats to give to managers and hiring managers 
+                                    to help alleviate some of the stigma and misinformation surrounding disabilities.
                                 </p>
                                 <br />
                                 <Container className="center">

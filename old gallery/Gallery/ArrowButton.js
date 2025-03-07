@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Col, Button} from "reactstrap";
 import arrow from "./images/arrow.png";
+import './Gallery.scss'
 
 export class ArrowButton extends Component {
     constructor(props) {
