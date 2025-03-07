@@ -12,7 +12,7 @@ export class GalleryProject extends Component {
             <Container className="gallery-project" style={{backgroundColor: backgroundColor, color: textColor}}>
                 
                 <Col className="slide-button-container justify-content-start">
-                    <Button className="slide-button" onClick={this.props.slideFunc(true)} style={{backgroundColor: backgroundColor, color: textColor}}>&lt;</Button>
+                    <Button className="slide-button" onClick={this.props.slideFunc(false)} style={{backgroundColor: backgroundColor, color: textColor}}>&lt;</Button>
                 </Col>
                 
                 <Col className="middle-col">
@@ -30,14 +30,14 @@ export class GalleryProject extends Component {
                         </span>
                     </Row>
                     </Container>
-                    
+
                     <Container className="date-text">
                         <span>Project Date:&#160;</span>{date}
                     </Container>
                 </Col>
                 
                 <Col className="slide-button-container justify-content-end">
-                    <Button className="slide-button" onClick={this.props.slideFunc(false)} style={{backgroundColor: backgroundColor, color: textColor}}>&gt;</Button>
+                    <Button className="slide-button" onClick={this.props.slideFunc(true)} style={{backgroundColor: backgroundColor, color: textColor}}>&gt;</Button>
 
                 </Col>
             </Container>
