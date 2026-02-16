@@ -5,6 +5,8 @@
     border-radius: 20px;
     display: flex;
 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    will-change: background-color, color;
 
     .extra-row {
         height: auto;
@@ -37,6 +39,8 @@
             img {
                 width: auto;
                 height: inherit;
+                object-fit: contain; // Shrinks the image to fit the square without cropping or stretching
+                background: transparent;
             }
         }
         
@@ -54,6 +58,30 @@
             }
             
             
+        }
+
+        .view-project {
+            display: block;          // Allows us to use margin: auto for centering
+            width: fit-content;      // Only as wide as the text + padding
+            margin: 2vh auto;        // Centers it horizontally and adds vertical spacing
+            padding: 10px 25px;
+            
+            text-decoration: none;   // Removes the default underline
+            font-size: calc(1vw + 1vh);
+            font-weight: bold;
+            color: inherit;          // Uses the textColor from the parent container
+            
+            border: 2px solid currentColor; // Matches the textColor automatically
+            border-radius: 50px;     // Rounded pill shape
+            transition: all 0.3s ease;
+
+            &:hover {
+                // background-color: currentColor; // Flips the colors on hover
+                // filter: invert(1);              // Ensures text is readable against the new background
+                transform: scale(1.05);         // Slight pop effect
+                text-decoration: none;
+                color: inherit;
+            }
         }
         
         .date-text {

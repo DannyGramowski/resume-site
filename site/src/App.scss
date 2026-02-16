@@ -8,3 +8,12 @@
   display: flex;
   justify-content: center;
 }
+
+.page-wrapper {
+  // background-image: url(files/background_image.jpg);
+  // background-attachment: fixed; /* This keeps the pattern still while you scroll */
+  
+  /* THIS IS THE FIX: */
+  // height: 100%; 
+
+}

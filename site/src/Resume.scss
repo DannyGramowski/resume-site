@@ -1,0 +1,60 @@
+.resume-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centers everything horizontally
+    padding: 40px 20px;
+    min-height: 100vh;
+    
+
+    .resume-paper {
+        background-color: transparent;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2); // Makes it pop off the background
+        border-radius: 4px;
+        overflow: hidden; // Keeps edges clean
+        line-height: 0; // Fixes tiny canvas gaps
+
+        // Target the specific internal library wrappers
+        .react-pdf__Document {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: transparent; // Removes unwanted white/gray backgrounds
+            
+            .react-pdf__Page {
+                background: transparent; // Removes the default page background
+                
+                // Ensure the canvas inside the page stays centered
+                canvas {
+                    display: block; 
+                    margin: 0 auto;
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+
+    }
+    
+    a {
+        margin-top: 20px;
+        padding: 10px 25px;
+        background-color: #1B9AAA; // Matching your project colors
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+    }
+
+    
+    .loading-text {
+        font-size: 1.5rem;
+        color: #666;
+    }
+}
+

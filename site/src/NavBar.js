@@ -33,15 +33,13 @@ export class NavBar extends Component {
                         <Link to='/projects' className={"menu-bar-item" + this.getClassNames(2)} onClick={() => this.setState({activeItem: 2})}>Projects</Link>
                     </Col>
                     <Col className='menu-bar-item-container'>
+                        <Link to='/resume' className={"menu-bar-item" + this.getClassNames(3)} onClick={() => this.setState({activeItem: 3})}>Resume</Link>
+                    </Col>
+                    {/* <Col className='menu-bar-item-container'>
                         <a href={resume} download="Danny_Resume.pdf" className="menu-bar-item">
                             <div>Resume</div>
                         </a>
-                    </Col>
-                    <Col className='menu-bar-item-container'>
-                        <a href="https://dannytga.itch.io/" className='icon' target='_blank' rel="noreferrer">
-                            <img src={itch} width={width} height={itchRation * width} alt="itch.io"/>
-                        </a>
-                    </Col>
+                    </Col> */}
                     <Col className='menu-bar-item-container'>
                         <a href="https://github.com/DannyGramowski" className='icon' target='_blank' rel="noreferrer">
                             <img src={github} width={width} height={githubRatio * width} alt="github"/>
@@ -52,9 +50,14 @@ export class NavBar extends Component {
                             <img src={linkedin} width={width} height={linkedinRation * width} alt='linkedin'/>
                         </a>
                     </Col>
+                    <Col className='menu-bar-item-container'>
+                        <a href="https://dannytga.itch.io/" className='icon' target='_blank' rel="noreferrer">
+                            <img src={itch} width={width} height={itchRation * width} alt="itch.io"/>
+                        </a>
+                    </Col>
                 </Row>  
             </Container>
-            <Container className='menu-bar-divider' />
+            {/* <Container className='menu-bar-divider' /> */}
         </Container>
         )
     }

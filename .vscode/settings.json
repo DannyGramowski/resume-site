@@ -1,7 +1,20 @@
 {
-    "css.styleSheets": [
-        "../site/src/App.css",
-        "../site/src/Gallery/Gallery.css",
-        "../site/src/Projects/Projects.css"
-    ]
+ "files.exclude": {
+        // "**/build": true,
+        // "**/node_modules": true,
+
+        // "**/migrations/": true,
+    },
+    "cSpell.words": [
+        "Bidii",
+        "Brickhack",
+        "Gramowski",
+        "Kalara's",
+        "Kalaras",
+        "Nutriapp",
+        "Odoo",
+        "QWER",
+        "Qwerkey",
+        "Vybes"
+    ],
 }

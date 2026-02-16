@@ -3,7 +3,8 @@
   --white: #FFFFFC;
   --grey: #757780;
   --black: #001011;
-  --blue: #6CCFF6;
+  --blue: #10B981;
+  --slate: #1E293B;
 
   --nutriappbg: #386641;
   --ghostjazzbg: #0dd091;
@@ -27,7 +28,7 @@
 }
 
 body {
-  margin: 0;
+  // margin: 0;
   font-family: Courier;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,6 +87,28 @@ code {
   max-width: none !important;
 }
 
+html, body, #root {
+  // height: 100% !important;
+  // margin: 0 !important;
+  // padding: 0 !important;
+}
+
+#root {
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 100vh; /* Ensures it is at least as tall as the screen */
+  min-height: 100vh; /* Takes at least the full screen height */
+  height: auto;      /* Allows it to grow with content */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(files/background_image.jpg);
+  background-attachment: fixed; /* Optional: keeps the pattern from scrolling */
+  background-size: cover;
+}
+
 .menu-bar-container {
   position: sticky;
   top: 0;
@@ -105,34 +128,40 @@ code {
 
       .menu-bar-item-container {
         display: inline-block;
-        padding: 10px;
+        // padding: 10px;
         position: relative;
 
         .menu-bar-item {
-          font-size: 28px;
+          display: inline-block;
+          font-size: 3em;
           cursor: pointer;
           text-decoration: none;
-          color: var(--black);
+          color: var(--slate);
+          transition: transform 0.2s ease-in-out;
 
           &:hover {
             text-decoration: underline;
+            transform: translateY(-4px);
           }
         }
 
         .active-bar-item {
-          color: var(--grey);
+          color: white;
         }
 
         .icon {
-          padding-bottom: 2px;
-          height: 4vw;
-          width: 4vw;
+          display: inline-block;
+          padding: 1px inherit;
+          height: 3.75em;
+          width: 3.75em;
           display: flex;
           justify-content: center;
           align-items: center;
-          
+          transition: transform 0.2s ease-in-out;
+
           &:hover {
-            border-bottom: 3px solid black;
+            border-bottom: 3px solid var(--slate);
+            transform: translateY(-4px);
           }
         }
       

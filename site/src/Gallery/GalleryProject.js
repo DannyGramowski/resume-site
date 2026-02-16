@@ -5,7 +5,7 @@ import './GalleryProject.scss'
 export class GalleryProject extends Component {
     
     render() {
-        const {projectName, description, date, backgroundColor, textColor, projectImage} = this.props.projectData;
+        const {projectName, description, date, backgroundColor, textColor, projectImage, url} = this.props.projectData;
         console.log(this.props.projectData)
         //image gallery here and each project has their own page. make it a square
         return(
@@ -18,22 +18,25 @@ export class GalleryProject extends Component {
                 <Col className="middle-col">
                     <Container>
 
-                    <Row className="header-row">
-                        <img src={projectImage} alt=""/>
-                        <span className="project-name">
-                            {projectName}
-                        </span>
-                    </Row>
-                    <Row className="description-row">
-                        <span className="description-text">
-                            {description}
-                        </span>
-                    </Row>
+                        <Row className="header-row">
+                            <img src={projectImage} alt=""/>
+                            <span className="project-name">
+                                {projectName}
+                            </span>
+                        </Row>
+                        <Row className="description-row">
+                            <span className="description-text">
+                                {description}
+                            </span>
+                        </Row>
                     </Container>
-
+                    {url && url !== "" && (
+                        <a className="view-project" href={url} target="_blank" rel="noopener noreferrer">View Project</a>
+                    )}                    
                     <Container className="date-text">
                         <span>Project Date:&#160;</span>{date}
                     </Container>
+                    
                 </Col>
                 
                 <Col className="slide-button-container justify-content-end">

@@ -10,11 +10,12 @@ import { Projects } from './Projects';
 // import { KalarasLastDefensePage } from './Projects/KalarasLastDefense';
 import { Component } from 'react';
 import { Experience } from './Experience';
+import { Resume } from './Resume';
 
 export class App extends Component {
 
   componentDidMount() {
-    document.title = "Danny Gramowski"
+    document.title = "Daniel Gramowski"
   }
 
   render () {
@@ -22,18 +23,21 @@ export class App extends Component {
       // <Button onClick={()=>console.log('hi')}>Hi</Button>
 
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/resume-site" element={<MainPage />} />
-          <Route path="/experience" element={<Experience />}/>
-          <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/ghost-jazz" element={<GhostJazzPage /> }/>
-          <Route path="/aqua-vybes" element={<AquaVybesPage /> }/>
-          <Route path="/bunch-notes" element={<BunchNotesPage /> }/>
-          <Route path="/nutri-app" element={<NutriAppPage /> }/>
-          <Route path="/kalaras" element={<KalarasLastDefensePage /> }/> */}
-        </Routes>
+        <div className='page-wrapper'>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/resume-site" element={<MainPage />} />
+            <Route path="/experience" element={<Experience />}/>
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/ghost-jazz" element={<GhostJazzPage /> }/>
+            <Route path="/aqua-vybes" element={<AquaVybesPage /> }/>
+            <Route path="/bunch-notes" element={<BunchNotesPage /> }/>
+            <Route path="/nutri-app" element={<NutriAppPage /> }/>
+            <Route path="/kalaras" element={<KalarasLastDefensePage /> }/> */}
+          </Routes>
+          </div>
       </BrowserRouter>
     );
   } 
