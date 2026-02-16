@@ -25,7 +25,6 @@
       "problemMatcher": [],
       "group": {
         "kind": "build",
-        "isDefault": true
       },
       "presentation": {
         "echo": true,
@@ -34,6 +33,9 @@
         "panel": "shared",
         "showReuseMessage": true,
         "clear": false
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/site"
       }
     }
   ]
