@@ -1,6 +1,7 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import dannyResume from "./files/Danny_Resume.pdf";
+import './Resume.scss'
 
 // This approach imports the worker file directly from your installed package
 

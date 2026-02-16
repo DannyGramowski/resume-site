@@ -17,6 +17,24 @@
       "options": {
         "cwd": "${workspaceFolder}/site"
       }
+    },
+    {
+      "label": "Deploy to GitHub Pages",
+      "type": "npm",
+      "script": "deploy",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     }
   ]
 }
