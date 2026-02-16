@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/resume-site/static/css/main.2fee9e09.css",
-    "main.js": "/resume-site/static/js/main.2d206c8f.js",
+    "main.js": "/resume-site/static/js/main.64c35bbf.js",
     "static/js/787.48bc3d2f.chunk.js": "/resume-site/static/js/787.48bc3d2f.chunk.js",
     "static/media/danny_suit.jpg": "/resume-site/static/media/danny_suit.9210329aef2e088ab556.jpg",
     "static/media/poker-bot.png": "/resume-site/static/media/poker-bot.206872005e1861aa4771.png",
     "static/media/american-dream.png": "/resume-site/static/media/american-dream.46c4206aa7ee8bda96ac.png",
-    "static/media/pdf.worker.min.mjs": "/resume-site/static/media/pdf.worker.min.8517fb2e3605cdc56296.mjs",
     "static/media/bidii_net.png": "/resume-site/static/media/bidii_net.8b805e508eaebf01c2df.png",
     "static/media/background_image.jpg": "/resume-site/static/media/background_image.d8f07162ac042b8687b7.jpg",
     "static/media/bracket-barn.png": "/resume-site/static/media/bracket-barn.0ee4cac934f7f4040edf.png",
@@ -25,11 +24,11 @@
     "static/media/linkedin.png": "/resume-site/static/media/linkedin.ce57aaffbfbffc186745.png",
     "index.html": "/resume-site/index.html",
     "main.2fee9e09.css.map": "/resume-site/static/css/main.2fee9e09.css.map",
-    "main.2d206c8f.js.map": "/resume-site/static/js/main.2d206c8f.js.map",
+    "main.64c35bbf.js.map": "/resume-site/static/js/main.64c35bbf.js.map",
     "787.48bc3d2f.chunk.js.map": "/resume-site/static/js/787.48bc3d2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fee9e09.css",
-    "static/js/main.2d206c8f.js"
+    "static/js/main.64c35bbf.js"
   ]
 }
