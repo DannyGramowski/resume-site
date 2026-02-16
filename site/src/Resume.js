@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import { Document, Page, pdfjs } from 'react-pdf';
 import dannyResume from "./files/Danny_Resume.pdf";
 // import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
-import './Resume.scss'
+import './Resume.scss';
 
 
 // This approach imports the worker file directly from your installed package
@@ -12,12 +12,12 @@ import './Resume.scss'
 //   import.meta.url,
 // ).toString();
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   'pdfjs-dist/build/pdf.worker.min.mjs',
+//   import.meta.url,
+// ).toString();
 
-// pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.mjs`;// var resumeURL = "";
+pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.mjs`;// var resumeURL = "";
 // if(dannyResume != "") {
 //     resumeURL = dannyResume;
 // } else {
@@ -31,11 +31,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 console.log(dannyResume, "danny resume url");
 
 export const Resume = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
+    function handleLoadSuccess() {
+        setIsLoaded(true);
+    }
     return (
         <div className="resume-page-wrapper">
             <div className="resume-paper">
                 <Document 
-                    file={dannyResume} 
+                    file={dannyResume}
+                    onLoadSuccess={handleLoadSuccess} 
                     loading={<p className="loading-text">Loading Resume...</p>}
                 >
                     <Page 
@@ -48,9 +53,11 @@ export const Resume = () => {
                 </Document>
             </div>
             
-            <a href={dannyResume} download="Daniel_Gramowski_Resume.pdf" className="custom-download-btn">
-                Download PDF
-            </a>
+            {isLoaded && (
+                <a href={dannyResume} download className="custom-download-btn animate-in">
+                    Download PDF
+                </a>
+            )}
         </div>
     );
 };
