@@ -1,29 +1,35 @@
 {
   "files": {
-    "main.css": "/resume-site/static/css/main.1c0336b8.css",
-    "main.js": "/resume-site/static/js/main.23da1c2c.js",
+    "main.css": "/resume-site/static/css/main.2fee9e09.css",
+    "main.js": "/resume-site/static/js/main.cf25a330.js",
     "static/js/787.48bc3d2f.chunk.js": "/resume-site/static/js/787.48bc3d2f.chunk.js",
-    "static/media/Danny zipline.png": "/resume-site/static/media/Danny zipline.ed6742a3d19459ea96f1.png",
+    "static/media/danny_suit.jpg": "/resume-site/static/media/danny_suit.9210329aef2e088ab556.jpg",
+    "static/media/poker-bot.png": "/resume-site/static/media/poker-bot.206872005e1861aa4771.png",
+    "static/media/american-dream.png": "/resume-site/static/media/american-dream.46c4206aa7ee8bda96ac.png",
+    "static/media/pdf.worker.min.mjs": "/resume-site/static/media/pdf.worker.min.8517fb2e3605cdc56296.mjs",
+    "static/media/bidii_net.png": "/resume-site/static/media/bidii_net.8b805e508eaebf01c2df.png",
     "static/media/background_image.jpg": "/resume-site/static/media/background_image.d8f07162ac042b8687b7.jpg",
+    "static/media/bracket-barn.png": "/resume-site/static/media/bracket-barn.0ee4cac934f7f4040edf.png",
+    "static/media/aurora-machine-logo.png": "/resume-site/static/media/aurora-machine-logo.5d14723eecf5b6204a6e.png",
     "static/media/TrainedTerrain.png": "/resume-site/static/media/TrainedTerrain.0b61aa4bdd71052bd33c.png",
     "static/media/QWER-KEY.png": "/resume-site/static/media/QWER-KEY.739ec94d5a16d3de4c32.png",
     "static/media/KalarasTransparent.png": "/resume-site/static/media/KalarasTransparent.25d04310e95079c7dbe1.png",
     "static/media/AquaVybes.png": "/resume-site/static/media/AquaVybes.498698925a3a0735cf7c.png",
-    "static/media/Danny_Resume.pdf": "/resume-site/static/media/Danny_Resume.ee4959935c9fdd3d993f.pdf",
+    "static/media/rit-logo.png": "/resume-site/static/media/rit-logo.2e6c7d0c69920f93e917.png",
+    "static/media/Danny_Resume.pdf": "/resume-site/static/media/Danny_Resume.2c6527c7e0d5d0bda891.pdf",
     "static/media/itch.png": "/resume-site/static/media/itch.b7e32da355f80f48aa40.png",
     "static/media/ghost-jazz-logo.png": "/resume-site/static/media/ghost-jazz-logo.9781c710075914b9bf6c.png",
     "static/media/Ideacard.png": "/resume-site/static/media/Ideacard.6cf3d904171573c49d2b.png",
     "static/media/github.png": "/resume-site/static/media/github.cb218f44e20683a54494.png",
     "static/media/Nutriapp.png": "/resume-site/static/media/Nutriapp.b8a6524e45666e3381aa.png",
     "static/media/linkedin.png": "/resume-site/static/media/linkedin.ce57aaffbfbffc186745.png",
-    "static/media/aurora-machine-logo.svg": "/resume-site/static/media/aurora-machine-logo.cc5fb207d99a68b36efa7ae8c1bb1b7f.svg",
     "index.html": "/resume-site/index.html",
-    "main.1c0336b8.css.map": "/resume-site/static/css/main.1c0336b8.css.map",
-    "main.23da1c2c.js.map": "/resume-site/static/js/main.23da1c2c.js.map",
+    "main.2fee9e09.css.map": "/resume-site/static/css/main.2fee9e09.css.map",
+    "main.cf25a330.js.map": "/resume-site/static/js/main.cf25a330.js.map",
     "787.48bc3d2f.chunk.js.map": "/resume-site/static/js/787.48bc3d2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c0336b8.css",
-    "static/js/main.23da1c2c.js"
+    "static/css/main.2fee9e09.css",
+    "static/js/main.cf25a330.js"
   ]
 }
