@@ -20,9 +20,18 @@
             align-items: center;
             background: transparent; // Removes unwanted white/gray backgrounds
             
+        // Fix for text layer alignment
+        
             .react-pdf__Page {
                 background: transparent; // Removes the default page background
-                
+            
+                .react-pdf__Page__textContent {
+                    border: none;
+                    background: transparent;
+                    color: transparent;
+                    opacity: 0.1; // Optional: makes it slightly visible for debugging, set to 1 or remove for production
+                    mix-blend-mode: multiply; // Helps text overlay smoothly
+                }
                 // Ensure the canvas inside the page stays centered
                 canvas {
                     display: block; 

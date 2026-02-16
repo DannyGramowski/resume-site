@@ -1,5 +1,7 @@
 import React, { useState } from 'react'; 
 import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 import dannyResume from "./files/Danny_Resume.pdf";
 // import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 import './Resume.scss';
@@ -45,16 +47,15 @@ export const Resume = () => {
                 >
                     <Page 
                         pageNumber={1} 
-                        // This width centers it nicely on most screens
                         width={window.innerWidth > 900 ? 900 : window.innerWidth * 0.95} 
-                        renderTextLayer={false} 
+                        renderTextLayer={true} 
                         renderAnnotationLayer={false}
                     />
                 </Document>
             </div>
             
             {isLoaded && (
-                <a href={dannyResume} download className="custom-download-btn animate-in">
+                <a href={dannyResume} download="Danny_Gramowski_Resume.pdf" className="custom-download-btn animate-in">
                     Download PDF
                 </a>
             )}

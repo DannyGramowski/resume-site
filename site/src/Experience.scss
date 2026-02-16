@@ -24,18 +24,18 @@
             margin-bottom: .75vh;
         }
     
-        &:hover {
+        // &:hover {
             // 2. Add the shadow (using a semi-transparent slate or emerald)
             // format: x-offset y-offset blur spread color
-            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+            // box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
             
             // 3. Optional: Subtle "lift" effect
-            transform: translateY(-4px);
+            // transform: translateY(-4px);
             
             // If you want an Emerald "glow" instead:
             // box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
             // border-color: #10B981; 
-        }
+        // }
 
         .company-position-row {
             display: flex;
